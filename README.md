@@ -1,6 +1,6 @@
 # Personal website
 
-Website built with [https://www.gatsbyjs.com/](Gatsby), [https://reactjs.org/](React) and [https://getbootstrap.com/](Bootstrap).
+Website built with [Gatsby](https://www.gatsbyjs.com/), [React](https://reactjs.org/) and [Bootstrap](https://getbootstrap.com/).
 
 ## Install Node.js modules
 
