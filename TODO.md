@@ -1,0 +1,8 @@
+- PDF version LaTeX CV
+- Add gallery page
+- Update Google Scholar
+- Rm Reasearch Gate + LinkedIn
+- Factorize components
+- Add 404 page
+- Add timeline for CV
+- Ajouter image carousel for talks

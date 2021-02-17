@@ -1,0 +1,238 @@
+name: Julien Vanharen
+position: Research engineer
+position_date_start: 2020-06-01
+birth_date: 1989-07-31
+birth_place: Soissons, France
+citizenship: French
+mail: julien.vanharen@onera.fr
+phone: +33 (0)6 60 74 88 16
+website: https://jvanhare.github.io/
+github: https://github.com/jvanhare
+scholar: https://scholar.google.com/citations?hl=en&user=R6OO3noAAAAJ
+address: 22-24, avenue Marcellin Berthelot, Apt. A302, 92320 Châtillon France
+
+company:
+  name: ONERA
+  team: DMPE/PLM
+  name_alt: The French Aerospace Lab
+  website: https://www.onera.fr/en
+
+research_interests:
+  - keyword: Computational Fluid Dynamics
+  - keyword: Steady and unsteady Navier-Stokes simulations on industrial configurations
+  - keyword: High-order and high-fidelity numerical methods
+  - keyword: Anisotropic unstructured mesh adaptation
+  - keyword: High-order mesh adaptation
+  - keyword: Finite Volume and Finite Element Methods
+  - keyword: Reynolds-Averaged Navier–Stokes (RANS) simulations
+  - keyword: Large Eddy Simulation (LES)
+  - keyword: High Performance Computing
+
+experience:
+  - title: Research engineer
+    show: true
+    company: ONERA - The French Aerospace Lab
+    company_url: https://www.onera.fr/en
+    location: Châtillon, France
+    date_start: 2020-06-01
+    description: <a href="https://cedre.onera.fr/" target="\_blank">CEDRE</a> developer
+    objectives:
+      - obj: Development of the <a href='https://cedre.onera.fr/' target="\_blank">CEDRE</a> suite
+      - obj: High-order and high-fidelity numerical methods
+      - obj: High Performance Computing optimization
+
+  - title: Postdoctoral Fellow
+    show: true
+    company: Inria Saclay - Île-de-France
+    company_url: https://www.inria.fr/en/centre-inria-saclay-ile-de-france
+    location: Palaiseau, France
+    date_start: 2017-05-01
+    date_end: 2020-05-31
+    description: Time-Accurate Anisotropic Mesh Adaptation for Fluid-Structure Interaction Simulations
+    objectives:
+      - obj: Implementation and validation of the Finite Element method for the unsteady linear elasticity equations
+      - obj: Coupling with a code solving the Euler equations based on the Finite Volume method
+      - obj: Development of error estimates for fluid-structure interaction applied to unsteady anisotropic mesh adaptation
+      - obj: Project RAPID funded by Direction Générale de l'Armement (DGA)
+
+  - title: Research engineer
+    show: false
+    company: CERFACS
+    company_url: https://cerfacs.fr
+    location: Toulouse, France
+    date_start: 2014-01-01
+    date_end: 2014-03-31
+    description: Computational Fluid Dynamics & High-Order Numerical Methods
+    objectives:
+      - obj: URANS computations on unstructured meshes
+      - obj: Stability of the Spectral Difference Method
+
+  - title: Research intern
+    show: false
+    company: CERFACS
+    company_url: https://cerfacs.fr
+    location: Toulouse, France
+    date_start: 2013-04-01
+    date_end: 2013-09-30
+    description: Numerical Methods for Nonconforming Grid Interface
+    objectives:
+      - obj: Theorerical and numerical analysis of nonconforming grid interface between structured blocks for Large Eddy Simulation,
+      - obj: Implementation inside the <a href='http://elsa.onera.fr' target="\_blank">elsA</a> software of a Riemann solver at the interface.
+
+  - title: Engineering intern
+    show: false
+    company: AIRBUS
+    company_url: https://www.airbus.com
+    location: Bremen, Germany
+    date_start: 2012-06-01
+    date_end: 2012-08-31
+    description: Handling Qualities
+    objectives:
+      - obj: A340-600 MSN360 flight test analysis
+      - obj: Effect of the vortex generators on rudder efficiency
+
+  - title: Engineering intern
+    show: false
+    company: AIRBUS
+    company_url: https://www.airbus.com
+    location: Toulouse, France
+    date_start: 2011-07-01
+    date_end: 2012-05-31
+    description: Methods & Tools for Unsteady Numerical Simulations on Moving Meshes
+    objectives:
+      - obj: Unsteady aerodynamics, gust and aileron deflection effect on aircraft behaviour,
+      - obj: Extension and improvement of CFD methods to predict flutter thanks to dynamic coupling,
+      - obj: Selected to be part of the EADS Junior Programme.
+
+education:
+  - title: Ph.D. Computational Fluid Dynamics
+    show: true
+    pdf: PhD_Vanharen_2017.pdf
+    company: AIRBUS
+    company_url: https://www.airbus.com
+    institution: Université de Toulouse
+    institution_url: https://www.univ-toulouse.fr/
+    location: Toulouse, France
+    date_start: 2014-05-01
+    date_end: 2017-04-30
+    description: High-Order Numerical Methods For Unsteady Flows Around Complex Geometries
+    objectives:
+      - obj: Collaboration between <a href='https://www.airbus.com' target="\_blank">AIRBUS</a> & <a href='https://cerfacs.fr' target="\_blank">CERFACS</a>
+      - obj: Several numerical methods & codes are investigated for industrial applications
+      - obj: The coupling with a nonconforming grid interface of high-order schemes for structured and unstructured zones in <a href='http://elsa.onera.fr' target="\_blank">elsA</a>
+      - obj: The Spectral Difference Method in <a href='http://gpuigt.free.fr/jaguar.html' target="\_blank">JAGUAR</a>
+      - obj: The Lattice Boltzmann Methods in <a href='http://www.prolb-cfd.com/' target="\_blank">ProLB</a>
+
+  - title: Argonne Training Program on Extreme-Scale Computing (ATPESC)
+    show: true
+    institution: Argonne National Laboratory
+    institution_url: https://extremecomputingtraining.anl.gov
+    location: Lemont, IL, USA
+    date_start: 2016-07-31
+    date_end: 2016-08-12
+    description:
+      Intensive, two-week training on the key skills, approaches, and tools
+      to design, implement, and execute computational science and engineering applications
+      on current high-end computing systems and the leadership-class computing systems of the future
+    objectives:
+      - obj: Computer architectures and predicted evolution
+      - obj: Numerical algorithms and mathematical software
+      - obj: Approaches to building community codes for HPC systems
+      - obj: Data analysis, visualization, I/O, and methodologies and tools for big data applications
+      - obj: Performance measurement and debugging tools
+
+  - title: M.Sc. Fluid Dynamics
+    show: true
+    institution: ISAE-SUPAERO
+    institution_url: https://www.isae-supaero.fr/en/
+    location: Toulouse, France
+    date_start: 2012-09-01
+    date_end: 2013-06-30
+
+  - title: M.Sc. Aerospace & Aeronautical Engineering
+    show: true
+    institution: ISAE-SUPAERO
+    institution_url: https://www.isae-supaero.fr/en/
+    location: Toulouse, France
+    date_start: 2009-09-01
+    date_end: 2013-06-30
+
+  - title: Classe Préparatoire PCSI/PC
+    show: false
+    institution: Lycée Faidherbe
+    institution_url: https://www.faidherbe.org/
+    location: Lille, France
+    date_start: 2007-09-01
+    date_end: 2009-06-30
+    description: Undergraduate studies in a national preparatory program
+      for entrance into France state run graduate school of engineering
+
+teaching:
+  - title: Incompressible fluid mechanics [MF102]
+    institution: ENSTA Paris
+    institution_url: https://www.ensta-paris.fr/
+    location: Palaiseau, France
+    date: 2019-06-01
+    description:
+      The goal of this course is to lay out the fundamental concepts and results
+      for the incompressible fluid mechanics.
+    objectives:
+      - obj: Characteristic quantities of an incompressible flow
+      - obj: Dimensional analysis
+      - obj: Navier-Stokes equations
+      - obj: Boundary layer concepts
+      - obj: Matched asymptotic expansions
+      - obj: Falkner–Skan boundary layer
+
+  - title: Fundamentals to understand and analyze high fidelity compressible Large Eddy Simulation (LES)
+    institution: CERFACS
+    institution_url: https://cerfacs.fr
+    location: Toulouse, France
+    date: 2016-05-01
+    description:
+      This training course enables the participants to reinforce their theoretical knowledge
+      in order to understand and analyze high fidelity compressible Large Eddy Simulation (LES) and
+      hands-on sessions are organized to put the theoretical courses into practice
+    objectives:
+      - obj: Numerical simulation for the Navier-Stokes equations (mesh, discretization methods, data storage)
+      - obj: High-fidelity numerical schemes for LES
+      - obj: Signal processing and unsteady turbulence modeling
+      - obj: Turbulence injection methods
+      - obj: Navier-Stokes Characteristic Boundary Conditions (NSCBC)
+      - obj: Wall treatment
+
+seminars:
+  - title: Anisotropic mesh adaptation. Theory and applications.
+    html: https://jvanhare.github.io/slides/
+    pdf: toto.pdf
+    institution: CEA-Cesta
+    institution_url: https://www.cea.fr/english
+    location: Le Barp, France
+    date: 2021-01-22
+    link: "Jan_2021_CEA"
+    abstract: "Computational Fluid Dynamics (CFD) entered the aerospace industry some decades ago.
+      During the last 20 years, the focus was mainly on increasing solver robustness and accuracy.
+      However, obvious as it may be, no mesh implies no solution
+      and the latter depends on the mesh quality.
+      Indeed, mesh and solution should be seen as a couple.
+      The numerical schemes and the mesh generation methods have to be tightly linked.
+      A very efficient approach to address these challenges is the anisotropic unstructured mesh adaptation
+      and the vertex-centered Mixed Finite Element Finite Volume (MFEFV) method.
+      First of all, an emphasis is put on the theory of anisotropic unstructured meshes and error estimates
+      for steady and unsteady flow simulations.
+      The cavity operator, including its non-manifold version,
+      is then presented to obtain, strictly speaking, the anisotropic mesh.
+      To conclude with the theoretical aspects, the key principles of the MFEFV method are presented.
+      Finally, this whole framework is illustrated by two major applications:
+      a fluid-structure interaction problem dealing with an elastic panel in shock tube
+      and the C608 low boom flight demonstrator test case from the third AIAA Sonic Boom Prediction Workshop (SBPW)."
+
+lang:
+  - name: French
+    level: Native proficiency
+  - name: English
+    level: Full working proficiency
+  - name: German
+    level: Good working knowledge
+  - name: Polish
+    level: Basic communication skills
