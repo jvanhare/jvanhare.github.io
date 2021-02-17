@@ -1,0 +1,144 @@
+%%% ARTICLE %%%
+
+@article{vanharen_jcp_337_2017,
+  title    = {Revisiting the spectral analysis for high-order spectral discontinuous methods},
+  doi      = {10.1016/j.jcp.2017.02.043},
+  journal  = {J. Comput. Phys.},
+  volume   = {337},
+  pages    = {379--402},
+  month    = {May},
+  year     = {2017},
+  author   = {Julien Vanharen and Guillaume Puigt and Xavier Vasseur and Jean-Fran\c{c}ois Boussuge and Pierre Sagaut},
+  keywords = {Space-time spectral analysis, Spectral discontinuous, Finite Difference, Aeroacoustics, Aliasing, Matrix Power Method},
+  abstract = {The spectral analysis is a basic tool to characterise the behaviour of any convection scheme. By nature, the solution projected
+    onto the Fourier basis enables to estimate the dissipation and the dispersion associated with the spatial discretisation of the hyperbolic linear problem.
+    In this paper, we wish to revisit such analysis, focusing attention on two key points. The first point concerns the effects of time integration
+    on the spectral analysis. It is shown with standard high-order Finite Difference schemes dedicated to aeroacoustics that the time integration
+    has an effect on the required number of points per wavelength. The situation depends on the choice of the coupled schemes
+    (one for time integration, one for space derivative and one for the filter) and here, the compact scheme with its eighth-order filter
+    seems to have a better spectral accuracy than the considered dispersion-relation preserving scheme with its associated filter,
+    especially in terms of dissipation. Secondly, such a coupled space–time approach is applied to the new class of high-order
+    spectral discontinuous approaches, focusing especially on the Spectral Difference method. A new way to address the specific
+    spectral behaviour of the scheme is introduced first for wavenumbers in [0,\pi], following the Matrix Power method.
+    For wavenumbers above π, an aliasing phenomenon always occurs but it is possible to understand and to control the aliasing of the signal.
+    It is shown that aliasing depends on the polynomial degree and on the number of time steps. A new way to define dissipation and
+    dispersion is introduced and applied to wavenumbers larger than π. Since the new criteria recover the previous results for wavenumbers below \pi,
+    the new proposed approach is an extension of all the previous ones dealing with dissipation and dispersion errors.
+    At last, since the standard Finite Difference schemes can serve as reference solution for their capability in aeroacoustics,
+    it is shown that the Spectral Difference method is as accurate as (or even more accurate) than the considered Finite Difference schemes.}
+}
+
+@article{vanharen_jcp_285_2015,
+  title    = {Theoretical and numerical analysis of nonconforming grid interface for unsteady flows},
+  doi      = {10.1016/j.jcp.2015.01.013},
+  journal  = {J. Comput. Phys.},
+  volume   = {285},
+  pages    = {111--132},
+  month    = {March},
+  year     = {2015},
+  author   = {Julien Vanharen and Guillaume Puigt and Marc Montagnac},
+  keywords = {Structured grids, Nonconforming grid interface, 2D spectral analysis, Reflection of high-frequency waves, High-order metric-dependent interpolation, Riemann solver},
+  abstract = {A framework is proposed for the spectral analysis of the numerical scheme applied on a nonconforming grid interface between two structured blocks
+    for the two-dimensional advection equation, in a cell-centered finite-volume formalism. The conservative flux computation on the nonconforming grid interface
+    is based on the sum of partial fluxes computed with the same numerical scheme used for a standard cell interface. This framework is used to analyze the effect
+    of grid refinement or coarsening on the stability of the second-order centered scheme. New theoretical results are given and compared to numerical results.
+    Considering the convection of a two-dimensional isentropic vortex, the refinement/coarsening are shown to be the cause of instabilities, poor accuracy and
+    reflection of high-frequency waves. A new approach to compute partial fluxes, which is based both on a high-order extrapolation that accounts for the local
+    metric and on a Riemann solver, is then proposed to reduce spurious modes.}
+}
+
+%%% PROCEEDINGS %%%
+
+@inproceedings{vanharen_aiaa_2021,
+  title     = {Nearfield anisotropic mesh adaptivity for the third {AIAA} sonic boom workshop},
+  doi       = {10.2514/6.2021-0347},
+  booktitle = {AIAA Scitech Forum},
+  month     = {January},
+  year      = {2021},
+  author    = {Julien Vanharen and Adrien Loseille and Fr\'{e}d\'{e}ric Alauzet and Michael A. Park},
+  address   = {Virtual Event},
+  abstract  = {Sonic boom prediction is critical for the development of low-boom supersonic
+    aircraft and encouraging a replacement of the overland commercial supersonic ban with
+    a certification standard. The Third AIAA Sonic Boom Workshop nearfield test cases provide
+    a unique opportunity to review anisotropic adaptive-mesh strategies for complex geometries
+    with important propulsion interaction effects.
+    Anisotropic metrics formulated to control estimated Mach interpolation and integrated
+    nearfield pressure signature (goal-oriented) errors are compared with the results obtained
+    on workshop-provided meshes. Detailed flow solutions and mesh renderings are combined
+    with computational schlieren images to reveal the complex interactions present in a
+    shock-plume interaction wind tunnel model and a prototype of the Low-Boom Flight Demonstrator.
+    A favorable comparison of independent implementations of the entire simulation process provides
+    evidence that each process is implemented correctly and sets a solid foundation for
+    confidence in the nearfield prediction of each method.}
+}
+
+@inproceedings{tenkes_aiaa_2021,
+  title     = {Hybrid anisotropic mesh adaptation using metric-orthogonal approach},
+  doi       = {10.2514/6.2021-1779},
+  booktitle = {AIAA Scitech Forum},
+  month     = {January},
+  year      = {2021},
+  author    = {Lucille-Marie Tenkes and Fr\'{e}d\'{e}ric Alauzet and Julien Vanharen},
+  address   = {Virtual Event},
+  abstract  = {In the context of mesh adaptation for CFD simulations,
+    some phenomena or numerical schemes require the mesh to be structured,
+    while respecting some alignment constraints e.g. boundary layers. 
+    Since full-hexahedra or full-quadrilaterals mesh generation methods cannot
+    fulfil such requirements so far, we propose to use hybrid meshes,
+    i.e. meshes containing both structured and unstructured elements.
+    Accordingly, the following work focuses on hybrid metric-based mesh
+    adaptation and CFD simulation on such meshes.
+    Regarding hybrid mesh generation, the method relies on a preliminary mesh
+    obtained through the so-called metric-orthogonal approach.
+    These approaches utilize the directional information held by a prescribed
+    metric-field to generate right angled elements, that can be combined into
+    structured elements to form a hybrid mesh. The result highly depends on
+    the quality of the metric field. Thus, emphasis is put on the size gradation
+    control performed beforehand. This process is re-designed to favor metric-orthogonal meshes.
+    To validate the method, some CFD simulations are performed.
+    The modifications brought to an existing Finite Volume solver to enable
+    such computations are detailed in this paper.}
+}
+
+@inproceedings{vanharen_aiaa_2018,
+  title     = {Mesh adaptation for fluid-structure interaction problems},
+  doi       = {10.2514/6.2018-3244},
+  booktitle = {AIAA Fluid Dynamics Conference},
+  month     = {June},
+  year      = {2018},
+  author    = {Julien Vanharen and R\'{e}mi Feuillet and Fr\'{e}d\'{e}ric Alauzet},
+  address   = {Atlanta, GA, USA},
+  abstract  = {A new strategy for mesh adaptation dealing with Fluid-Structure Interaction (FSI) problems is presented using a partitioned approach.
+    The Euler equations are solved by an edge-based Finite Volume solver whereas the linear elasticity equations are solved by the Finite Element Method
+    using the Lagrange $P^1$ elements. The coupling between both codes is realized by imposing boundary conditions.
+    Small displacements of the structure are assumed and so the mesh is not deformed.
+    The computation of a well-documented FSI test case is finally carried out to perform validation of this new strategy.
+    The capability of treating three-dimensional complex cases is also demonstrated.}
+}
+
+%%% THESES %%%
+
+@phdthesis{vanharen_phd,
+  pdf      = {https://jvanhare.github.io/PhD_Vanharen_2017.pdf},
+  title    = {High-Order Numerical Methods For Unsteady Flows Around Complex Geometries},
+  school   = {Universit\'e de Toulouse},
+  year     = {2017},
+  month    = {May},
+  author   = {Julien Vanharen},
+  keywords = {Finite Volume, Nonconforming Grid Interface, Hybrid Approach, High-Order Unstructured Schemes, Spurious Waves, Spectral Difference, Spectral Analysis},
+  abstract = {This work deals with high-order numerical methods for unsteady flows around complex geometries.
+    In order to cope with the low-order industrial Finite Volume Method, the proposed technique consists
+    in computing on structured and unstructured zones with their associated schemes:
+    this is called a hybrid approach. Structured and unstructured meshes are then coupled
+    by a nonconforming grid interface. The latter is analyzed in details with special
+    focus on unsteady flows. It is shown that a dedicated treatment at the interface avoids
+    the reflection of spurious waves. Moreover, this hybrid approach is validated on several
+    academic test cases for both convective and diffusive fluxes. The extension of this hybrid
+    approach to high-order schemes is limited by the efficiency of unstructured high-order schemes
+    in terms of computational time. This is why a new approach is explored: The Spectral Difference Method.
+    A new framework is especially developed to perform the spectral analysis of Spectral Discontinuous Methods.
+    The Spectral Difference Method seems to be a viable alternative in terms of computational time and
+    number of points per wavelength needed for a given application to capture the flow physics.}
+}
+
+%%% EOF %%%
