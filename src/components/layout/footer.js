@@ -1,6 +1,7 @@
 /* Import React.js. */
 import React from 'react'
 /* Import React Bootstrap components. */
+import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container'
 /* Date for the footer. */
@@ -13,11 +14,10 @@ export default class Footer extends React.Component {
         return (
             <Navbar bg="light" expand="sm" fixed="bottom">
                 <Container>
-                    <Navbar.Brand href="/#" className="mr-auto" style={{ fontSize: "0.8rem"}}>
-                        &copy; {month} {year}. Built with &nbsp;
-                        <a href="https://www.gatsbyjs.com">Gatsby</a>, &nbsp;
-                        <a href="https://reactjs.org/">React</a> and &nbsp;
-                        <a href="https://getbootstrap.com/">Bootstrap</a>.
+                    <Navbar.Brand className="mr-auto" style={{ fontSize: "0.8rem"}}>
+                        &copy; {month} {year}. Built with <Nav.Link href="https://www.gatsbyjs.com">Gatsby</Nav.Link>,&nbsp;
+                        <Nav.Link href="https://reactjs.org/">React</Nav.Link> and&nbsp;
+                        <Nav.Link href="https://getbootstrap.com/">Bootstrap</Nav.Link>.
                     </Navbar.Brand>
                 </Container>
             </Navbar >

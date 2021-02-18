@@ -1,5 +1,7 @@
 /* Import React.js. */
 import React from "react"
+/* Import React Bootstrap components. */
+import Container from 'react-bootstrap/Container'
 /* Import Gatsby components. */
 import { graphql } from "gatsby"
 /* Import my components. */
@@ -13,25 +15,27 @@ import "../scss/main.scss";
 export default function Publications({ data }) {
   return (
     <Layout>
-      <h1>Publications</h1>
-      <h2>Journal Articles</h2>
-      <ol>
-        {data.articles.edges.map(({ node }, index) => (
-          <Article data={node} />
-        ))}
-      </ol>
-      <h2>Conference Articles</h2>
-      <ol>
-        {data.conferences.edges.map(({ node }, index) => (
-          <Conference data={node} />
-        ))}
-      </ol>
-      <h2>Theses</h2>
-      <ol>
-        {data.phd.edges.map(({ node }, index) => (
-          <PhD data={node} />
-        ))}
-      </ol>
+      <Container fluid>
+        <h1>Publications</h1>
+        <h2>Journal Articles</h2>
+        <ol>
+          {data.articles.edges.map(({ node }, index) => (
+            <Article key={`article_${index}`} data={node} />
+          ))}
+        </ol>
+        <h2>Conference Articles</h2>
+        <ol>
+          {data.conferences.edges.map(({ node }, index) => (
+            <Conference key={`conference_${index}`} data={node} />
+          ))}
+        </ol>
+        <h2>Theses</h2>
+        <ol>
+          {data.phd.edges.map(({ node }, index) => (
+            <PhD key={`phd_${index}`} data={node} />
+          ))}
+        </ol>
+      </Container>
     </Layout>
   )
 }

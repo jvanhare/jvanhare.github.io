@@ -20,22 +20,22 @@ export default class Header extends React.Component {
     return (
       <Navbar bg="light" expand="sm" fixed="top">
         <Container>
-          <Navbar.Brand href="/#" className="mr-auto">
-            <a aria-label="mail" href={"mailto:" + cv.mail}><FontAwesomeIcon icon={faEnvelope} /></a> &nbsp;
-            <a aria-label="scholar" href={cv.scholar}><FontAwesomeIcon icon={faGraduationCap} /></a> &nbsp;
-            <a aria-label="github" href={cv.github}><FontAwesomeIcon icon={faGithub} /></a>
+          <Navbar.Brand className="mr-auto">
+            <Nav.Link href={"mailto:" + cv.mail}><FontAwesomeIcon icon={faEnvelope} /></Nav.Link>&nbsp;&nbsp;
+            <Nav.Link href={cv.scholar}><FontAwesomeIcon icon={faGraduationCap} /></Nav.Link>&nbsp;&nbsp;
+            <Nav.Link href={cv.github}><FontAwesomeIcon icon={faGithub} /></Nav.Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar">
             <FontAwesomeIcon icon={faBars} className="text-info" />
           </Navbar.Toggle>
           <Navbar.Collapse id="responsive-navbar">
             <Nav className="ml-auto">
-              <Nav.Link> <Link to="/">About</Link>                      </Nav.Link>
-              <Nav.Link> <Link to="/cv">CV</Link>                      </Nav.Link>
-              <Nav.Link> <Link to="/publications">Publications</Link>   </Nav.Link>
-              <Nav.Link> <Link to="/talks">Talks</Link>                 </Nav.Link>
-              <Nav.Link> <Link to="/projects">Projects</Link>            </Nav.Link>
-              <Nav.Link> <Link to="/teaching">Teaching</Link>           </Nav.Link>
+              <Nav.Link as={Link} to="/">About</Nav.Link>
+              <Nav.Link as={Link} to="/cv">CV</Nav.Link>
+              <Nav.Link as={Link} to="/publications">Publications</Nav.Link>
+              <Nav.Link as={Link} to="/talks">Talks</Nav.Link>
+              <Nav.Link as={Link} to="/projects">Projects</Nav.Link>
+              <Nav.Link as={Link} to="/teaching">Teaching</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

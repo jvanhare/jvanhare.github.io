@@ -1,5 +1,7 @@
 /* Import React.js. */
 import React from "react"
+/* Import React Bootstrap components. */
+import Container from 'react-bootstrap/Container'
 /* Import my components. */
 import Layout from "../components/layout/layout"
 import Course from "../components/cv/course"
@@ -12,10 +14,12 @@ export default class Teaching extends React.Component {
   render() {
     return (
       <Layout>
-        <h1>Teaching</h1>
-        {cv.teaching.map((course, index) => {
-          return <Course data={course}></Course>
-        })}
+        <Container fluid>
+          <h1>Teaching</h1>
+          {cv.teaching.map((course, index) => {
+            return <Course key={`course_${index}`} data={course}></Course>
+          })}
+        </Container>
       </Layout>
     )
   }

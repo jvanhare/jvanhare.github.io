@@ -205,6 +205,18 @@ seminars:
   - title: Anisotropic mesh adaptation. Theory and applications.
     html: https://jvanhare.github.io/slides/
     pdf: toto.pdf
+    img:
+      - item: fig/2021-01-22_CEA/c608_symmetry.png
+      - item: fig/2021-01-22_CEA/mach_ite19.png
+      - item: fig/2021-01-22_CEA/mesh_ite19.png
+      - item: fig/2021-01-22_CEA/mach_ite39.png
+      - item: fig/2021-01-22_CEA/mesh_ite39.png
+      - item: fig/2021-01-22_CEA/mach_ite59.png
+      - item: fig/2021-01-22_CEA/mesh_ite59.png
+      - item: fig/2021-01-22_CEA/mach_ite79.png
+      - item: fig/2021-01-22_CEA/mesh_ite79.png
+      - item: fig/2021-01-22_CEA/mach_ite99.png
+      - item: fig/2021-01-22_CEA/mesh_ite99.png
     institution: CEA-Cesta
     institution_url: https://www.cea.fr/english
     location: Le Barp, France
