@@ -12,6 +12,7 @@ exports.createPages = ({ actions }) => {
                 title: elt.title,
                 html: elt.html,
                 pdf: elt.pdf,
+                img: elt.img,
                 institution: elt.institution,
                 institution_url: elt.institution_url,
                 location: elt.location,

@@ -5,9 +5,9 @@ const Bar = ({ data }) => {
     return (
         <div className="BarChart">
             {data &&
-                data.map((d) => {
+                data.map((d, index) => {
                     return (
-                        <div className={"BarData " + d.lang} style={{ width: `${d.percent}%` }}></div>
+                        <div key={`${d.name}_${d.lang}`} className={"BarData " + d.lang} style={{ width: `${d.percent}%` }}></div>
                     );
                 })}
         </div>

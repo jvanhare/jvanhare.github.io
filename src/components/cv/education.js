@@ -46,11 +46,12 @@ export default class Education extends React.Component {
                         <span className="text-muted">{location}</span> <br />
                         {date_start} - {date_end}
                     </p>
-                    <p><i>
+                    <i>
                         <Fragment>
                             <div dangerouslySetInnerHTML={{ __html: description }} />
                         </Fragment>
-                    </i></p>
+                    </i>
+                    <br/>
                     {obj}
                 </Container >
             )

@@ -1,6 +1,7 @@
 /* Import React.js. */
 import React from "react"
 /* Import React Bootstrap components. */
+import Container from 'react-bootstrap/Container'
 import CardColumns from 'react-bootstrap/CardColumns'
 /* Import Gatsby components. */
 import { graphql } from "gatsby"
@@ -11,18 +12,20 @@ import Github from "../components/github"
 import "../scss/main.scss";
 
 export default function Projects({ data }) {
-    let repos = data.allGithubData.edges[0].node.data.user.repositories
-    return (
-        <Layout>
-            <h1>Projects</h1>
-            <h2>GitHub repositories</h2>
-            <CardColumns>
-                {repos.edges.map(({ node }, index) => (
-                    <Github data={node} />
-                ))}
-            </CardColumns>
-        </Layout>
-    )
+  let repos = data.allGithubData.edges[0].node.data.user.repositories
+  return (
+    <Layout>
+      <Container fluid>
+        <h1>Projects</h1>
+        <h2>GitHub repositories</h2>
+        <CardColumns>
+          {repos.edges.map(({ node }, index) => (
+            <Github key={`repository_${index}`} data={node} />
+          ))}
+        </CardColumns>
+      </Container>
+    </Layout>
+  )
 }
 
 export const query = graphql`

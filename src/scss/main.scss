@@ -74,6 +74,12 @@ $theme-colors: (
 // }
 @import "~bootstrap/scss/bootstrap";
 
+.nav-link {
+  color: $blue !important;
+  display: inline;
+  padding: 0;
+}
+
 body {
   margin-top: 6em;
   margin-bottom: 6em;
@@ -82,6 +88,13 @@ body {
 // .navbar-nav {
 //   flex-direction: row;
 // }
+
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon,
+.carousel-indicators {
+  filter: invert(0.5);
+}
 
 .avatar {
   border-radius: 50%;
