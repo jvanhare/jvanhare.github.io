@@ -1,4 +1,4 @@
-const githubApiQuery =`
+const githubApiQuery = `
   query($github_login: String!) {
     user(login: $github_login) {
       id
@@ -39,6 +39,12 @@ module.exports = {
     author: `Julien Vanharen`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: ["G-BN1EECX5R4"],
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
