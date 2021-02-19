@@ -12,7 +12,6 @@ const Seminar = props => {
     const { title, html, pdf, img, institution, institution_url, location, date, abstract } = pageContext
     var opt = { day: 'numeric', year: 'numeric', month: 'long' };
     var formatDate = new Date(date).toLocaleDateString("en-US", opt);
-    console.log(img, pdf)
     return (
         <Layout>
             <Container fluid>
