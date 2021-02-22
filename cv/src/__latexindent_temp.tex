@@ -1,0 +1,119 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage{marvosym}
+\usepackage{fontspec}
+\usepackage{amssymb}
+\usepackage{pifont}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\usepackage{url}
+\usepackage{parskip}
+\usepackage{supertabular}
+\usepackage{titlesec}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage[absolute]{textpos}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[vmargin={1.5cm,1.5cm},hmargin={1.8cm,1.8cm}]{geometry}
+\usepackage[citestyle=numeric-comp,sorting=none,sortcites=false,autopunct=true,babel=hyphen,hyperref=true,abbreviate=false,backref=true,backend=biber,maxbibnames=99,date=year,isbn=false]{biblatex}
+
+\def\UrlFont{\normalfont}
+\DeclareFieldFormat{doi}{~\href{http://dx.doi.org/#1}{[#1]}}
+\DeclareFieldFormat{url}{~\href{#1}{[PDF]}}
+\DeclareFieldFormat*{pages}{#1}
+\DeclareFieldFormat*{journaltitle}{\textit{#1}}
+\DeclareFieldFormat*{booktitle}{\textit{#1}}
+\DeclareFieldFormat*{citetitle}{#1}
+\DeclareFieldFormat*{title}{\textbf{#1}}
+
+\renewbibmacro{in:}{}
+\renewbibmacro{mkbibquote}{}
+
+\defbibheading{bibempty}{}
+\addbibresource{../../bib/jvanhare.bib}
+
+\definecolor{linkcolour}{RGB}{0,129,168}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[Path = fonts/, SmallCapsFont = Fontin-SmallCaps.otf, BoldFont = Fontin-Bold.otf, ItalicFont = Fontin-Italic.otf]{Fontin.otf}
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+\setlength{\TPHorizModule}{30mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+\textblockorigin{2mm}{0.65\paperheight}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+\pagestyle{empty}
+
+\begin{center}
+    \BLOCK{ set name = name.split(' ') }
+    {\Huge \VAR{name[0]} \textsc{\VAR{name[1]}}}
+    \smallskip\par{\Large Ph.D. in Computational Fluid Dynamics}
+\end{center}
+\smallskip
+
+\section{Personal Data}
+\begin{tabular}{rl}
+    \textsc{Place and Date of Birth:} & \VAR{birth_place} | \VAR{birth_date|date} \\
+    \textsc{Citizenship:}             & \VAR{citizenship}                         \\
+    \textsc{Phone:}                   & \VAR{phone}                               \\
+    \textsc{Email:}                   & \href{mailto:\VAR{mail}}{\VAR{mail}}      \\
+    \textsc{Website:}                 & \url{\VAR{website}}                       \\
+    \textsc{Address:}                 & \VAR{address}                             \\
+\end{tabular}
+
+\section{Professional Experience}
+\begin{tabular}{r|p{15cm}}
+    \BLOCK{for exp in experience}
+    \BLOCK{if exp.show}
+    \textsc{\VAR{exp.date_start|date_month}}                                   & \VAR{exp.title}                                                                     \\
+    \BLOCK{if exp.date_end}\textsc{\VAR{exp.date_end|date_month}}\BLOCK{endif} & \href{\VAR{exp.company_url}}{\VAR{exp.company}} in \VAR{exp.location}               \\
+                                                                               & \emph{\VAR{exp.description|latex}}                                                  \\
+                                                                               & \footnotesize{\BLOCK{for obj in exp.objectives}\VAR{obj.obj|latex}. \BLOCK{endfor}} \\
+    \multicolumn{2}{c}{}                                                                                                                                             \\
+    \BLOCK{endif}
+    \BLOCK{endfor}
+\end{tabular}
+
+\section{Education}
+\begin{tabular}{r|p{15cm}}
+    \BLOCK{for edu in education}
+    \BLOCK{if edu.show}
+    \textsc{\VAR{edu.date_start|date_month}} & \BLOCK{if edu.pdf}\href{\VAR{website}pdf/\VAR{edu.pdf}}{\BLOCK{endif}\VAR{edu.title|latex}\BLOCK{if edu.pdf}}\BLOCK{endif}                                          \\
+    \textsc{\VAR{edu.date_end|date_month}}   & \BLOCK{if edu.company}\href{\VAR{edu.company_url}}{\VAR{edu.company}} \&\BLOCK{endif} \href{\VAR{edu.institution_url}}{\VAR{edu.institution}} in \VAR{edu.location} \\
+    \BLOCK{if edu.description}               & \emph{\VAR{edu.description|latex}}                                                                                                                                  \\\BLOCK{endif}
+    \BLOCK{if edu.objectives}                & \footnotesize{\BLOCK{for obj in edu.objectives}\VAR{obj.obj|latex}. \BLOCK{endfor}}                                                                                 \\\BLOCK{endif}
+    \multicolumn{2}{c}{}                                                                                                                                                                                           \\
+    \BLOCK{endif}
+    \BLOCK{endfor}
+\end{tabular}
+
+\section{Teaching}
+\begin{tabular}{r|p{15cm}}
+    \BLOCK{for t in teaching}
+    \textsc{\VAR{t.date|date_month}} & \VAR{t.title|latex}                                                     \\
+                                     & \href{\VAR{t.institution_url}}{\VAR{t.institution}} in \VAR{t.location} \\
+    \multicolumn{2}{c}{}                                                                                       \\
+    \BLOCK{endfor}
+\end{tabular}
+
+\section{Languages}
+\begin{tabular}{rl}
+    \BLOCK{for l in lang}
+    \textsc{\VAR{l.name}} & \VAR{l.level} \\
+    \BLOCK{endfor}
+\end{tabular}
+
+\nocite{*}
+\section{Publications}
+\printbibliography[heading=none, type=article]
+\section{Conferences}
+\printbibliography[heading=none, type=inproceedings]
+\section{Thesis}
+\printbibliography[heading=none, type=thesis]
+
+\end{document}

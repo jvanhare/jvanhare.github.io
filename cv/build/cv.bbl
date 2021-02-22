@@ -1,0 +1,283 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{vanharen_jcp_337_2017}{article}{}
+      \name{author}{5}{}{%
+        {{hash=c4fb842d8e8f786b7085f75cb322fa76}{%
+           family={Vanharen},
+           familyi={V\bibinitperiod},
+           given={Julien},
+           giveni={J\bibinitperiod}}}%
+        {{hash=af9c224b4d2e6b9242e06181e29ec84c}{%
+           family={Puigt},
+           familyi={P\bibinitperiod},
+           given={Guillaume},
+           giveni={G\bibinitperiod}}}%
+        {{hash=ed75b1140b4ec2e4f44256ff45c7cd0a}{%
+           family={Vasseur},
+           familyi={V\bibinitperiod},
+           given={Xavier},
+           giveni={X\bibinitperiod}}}%
+        {{hash=3f5a55e694e13260a80705a2c63e40b2}{%
+           family={Boussuge},
+           familyi={B\bibinitperiod},
+           given={Jean-François},
+           giveni={J\bibinithyphendelim F\bibinitperiod}}}%
+        {{hash=4d8f3cd5017acab6fb62663bf4fa4237}{%
+           family={Sagaut},
+           familyi={S\bibinitperiod},
+           given={Pierre},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{533938b9112bf7dd3fa51e43311e0a5f}
+      \strng{fullhash}{37f0c1ebd06d1e40e6fc9852baed5f21}
+      \strng{bibnamehash}{37f0c1ebd06d1e40e6fc9852baed5f21}
+      \strng{authorbibnamehash}{37f0c1ebd06d1e40e6fc9852baed5f21}
+      \strng{authornamehash}{533938b9112bf7dd3fa51e43311e0a5f}
+      \strng{authorfullhash}{37f0c1ebd06d1e40e6fc9852baed5f21}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The spectral analysis is a basic tool to characterise the behaviour of any convection scheme. By nature, the solution projected onto the Fourier basis enables to estimate the dissipation and the dispersion associated with the spatial discretisation of the hyperbolic linear problem. In this paper, we wish to revisit such analysis, focusing attention on two key points. The first point concerns the effects of time integration on the spectral analysis. It is shown with standard high-order Finite Difference schemes dedicated to aeroacoustics that the time integration has an effect on the required number of points per wavelength. The situation depends on the choice of the coupled schemes (one for time integration, one for space derivative and one for the filter) and here, the compact scheme with its eighth-order filter seems to have a better spectral accuracy than the considered dispersion-relation preserving scheme with its associated filter, especially in terms of dissipation. Secondly, such a coupled space–time approach is applied to the new class of high-order spectral discontinuous approaches, focusing especially on the Spectral Difference method. A new way to address the specific spectral behaviour of the scheme is introduced first for wavenumbers in [0,\pi], following the Matrix Power method. For wavenumbers above π, an aliasing phenomenon always occurs but it is possible to understand and to control the aliasing of the signal. It is shown that aliasing depends on the polynomial degree and on the number of time steps. A new way to define dissipation and dispersion is introduced and applied to wavenumbers larger than π. Since the new criteria recover the previous results for wavenumbers below \pi, the new proposed approach is an extension of all the previous ones dealing with dissipation and dispersion errors. At last, since the standard Finite Difference schemes can serve as reference solution for their capability in aeroacoustics, it is shown that the Spectral Difference method is as accurate as (or even more accurate) than the considered Finite Difference schemes.}
+      \field{journaltitle}{J. Comput. Phys.}
+      \field{month}{5}
+      \field{title}{Revisiting the spectral analysis for high-order spectral discontinuous methods}
+      \field{volume}{337}
+      \field{year}{2017}
+      \true{nocite}
+      \field{pages}{379\bibrangedash 402}
+      \range{pages}{24}
+      \verb{doi}
+      \verb 10.1016/j.jcp.2017.02.043
+      \endverb
+      \keyw{Space-time spectral analysis,Spectral discontinuous,Finite Difference,Aeroacoustics,Aliasing,Matrix Power Method}
+    \endentry
+    \entry{vanharen_jcp_285_2015}{article}{}
+      \name{author}{3}{}{%
+        {{hash=c4fb842d8e8f786b7085f75cb322fa76}{%
+           family={Vanharen},
+           familyi={V\bibinitperiod},
+           given={Julien},
+           giveni={J\bibinitperiod}}}%
+        {{hash=af9c224b4d2e6b9242e06181e29ec84c}{%
+           family={Puigt},
+           familyi={P\bibinitperiod},
+           given={Guillaume},
+           giveni={G\bibinitperiod}}}%
+        {{hash=655d1b40264fe68458b49a41e326db33}{%
+           family={Montagnac},
+           familyi={M\bibinitperiod},
+           given={Marc},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{63e05304caab8a1fe085a6ddbfab1ac3}
+      \strng{fullhash}{63e05304caab8a1fe085a6ddbfab1ac3}
+      \strng{bibnamehash}{63e05304caab8a1fe085a6ddbfab1ac3}
+      \strng{authorbibnamehash}{63e05304caab8a1fe085a6ddbfab1ac3}
+      \strng{authornamehash}{63e05304caab8a1fe085a6ddbfab1ac3}
+      \strng{authorfullhash}{63e05304caab8a1fe085a6ddbfab1ac3}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A framework is proposed for the spectral analysis of the numerical scheme applied on a nonconforming grid interface between two structured blocks for the two-dimensional advection equation, in a cell-centered finite-volume formalism. The conservative flux computation on the nonconforming grid interface is based on the sum of partial fluxes computed with the same numerical scheme used for a standard cell interface. This framework is used to analyze the effect of grid refinement or coarsening on the stability of the second-order centered scheme. New theoretical results are given and compared to numerical results. Considering the convection of a two-dimensional isentropic vortex, the refinement/coarsening are shown to be the cause of instabilities, poor accuracy and reflection of high-frequency waves. A new approach to compute partial fluxes, which is based both on a high-order extrapolation that accounts for the local metric and on a Riemann solver, is then proposed to reduce spurious modes.}
+      \field{journaltitle}{J. Comput. Phys.}
+      \field{month}{3}
+      \field{title}{Theoretical and numerical analysis of nonconforming grid interface for unsteady flows}
+      \field{volume}{285}
+      \field{year}{2015}
+      \true{nocite}
+      \field{pages}{111\bibrangedash 132}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1016/j.jcp.2015.01.013
+      \endverb
+      \keyw{Structured grids,Nonconforming grid interface,2D spectral analysis,Reflection of high-frequency waves,High-order metric-dependent interpolation,Riemann solver}
+    \endentry
+    \entry{vanharen_aiaa_2021}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=c4fb842d8e8f786b7085f75cb322fa76}{%
+           family={Vanharen},
+           familyi={V\bibinitperiod},
+           given={Julien},
+           giveni={J\bibinitperiod}}}%
+        {{hash=e33ae7561a80c5571508f23e3218f242}{%
+           family={Loseille},
+           familyi={L\bibinitperiod},
+           given={Adrien},
+           giveni={A\bibinitperiod}}}%
+        {{hash=ec1626618a6c5d585acee8af2e3cd8c2}{%
+           family={Alauzet},
+           familyi={A\bibinitperiod},
+           given={Frédéric},
+           giveni={F\bibinitperiod}}}%
+        {{hash=2630aebfd49e1e01aa470ab68d3c15f3}{%
+           family={Park},
+           familyi={P\bibinitperiod},
+           given={Michael\bibnamedelima A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Virtual Event}%
+      }
+      \strng{namehash}{533938b9112bf7dd3fa51e43311e0a5f}
+      \strng{fullhash}{cbb45af09d528b88a5401c6e7f2a63c3}
+      \strng{bibnamehash}{cbb45af09d528b88a5401c6e7f2a63c3}
+      \strng{authorbibnamehash}{cbb45af09d528b88a5401c6e7f2a63c3}
+      \strng{authornamehash}{533938b9112bf7dd3fa51e43311e0a5f}
+      \strng{authorfullhash}{cbb45af09d528b88a5401c6e7f2a63c3}
+      \field{extraname}{2}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Sonic boom prediction is critical for the development of low-boom supersonic aircraft and encouraging a replacement of the overland commercial supersonic ban with a certification standard. The Third AIAA Sonic Boom Workshop nearfield test cases provide a unique opportunity to review anisotropic adaptive-mesh strategies for complex geometries with important propulsion interaction effects. Anisotropic metrics formulated to control estimated Mach interpolation and integrated nearfield pressure signature (goal-oriented) errors are compared with the results obtained on workshop-provided meshes. Detailed flow solutions and mesh renderings are combined with computational schlieren images to reveal the complex interactions present in a shock-plume interaction wind tunnel model and a prototype of the Low-Boom Flight Demonstrator. A favorable comparison of independent implementations of the entire simulation process provides evidence that each process is implemented correctly and sets a solid foundation for confidence in the nearfield prediction of each method.}
+      \field{booktitle}{AIAA Scitech Forum}
+      \field{month}{1}
+      \field{title}{Nearfield anisotropic mesh adaptivity for the third {AIAA} sonic boom workshop}
+      \field{year}{2021}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.2514/6.2021-0347
+      \endverb
+    \endentry
+    \entry{tenkes_aiaa_2021}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=1f45931e92affda6076b75fd2f044369}{%
+           family={Tenkes},
+           familyi={T\bibinitperiod},
+           given={Lucille-Marie},
+           giveni={L\bibinithyphendelim M\bibinitperiod}}}%
+        {{hash=ec1626618a6c5d585acee8af2e3cd8c2}{%
+           family={Alauzet},
+           familyi={A\bibinitperiod},
+           given={Frédéric},
+           giveni={F\bibinitperiod}}}%
+        {{hash=c4fb842d8e8f786b7085f75cb322fa76}{%
+           family={Vanharen},
+           familyi={V\bibinitperiod},
+           given={Julien},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Virtual Event}%
+      }
+      \strng{namehash}{2f0b6d874d5bf9eb6ef45b29092f7c1c}
+      \strng{fullhash}{2f0b6d874d5bf9eb6ef45b29092f7c1c}
+      \strng{bibnamehash}{2f0b6d874d5bf9eb6ef45b29092f7c1c}
+      \strng{authorbibnamehash}{2f0b6d874d5bf9eb6ef45b29092f7c1c}
+      \strng{authornamehash}{2f0b6d874d5bf9eb6ef45b29092f7c1c}
+      \strng{authorfullhash}{2f0b6d874d5bf9eb6ef45b29092f7c1c}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In the context of mesh adaptation for CFD simulations, some phenomena or numerical schemes require the mesh to be structured, while respecting some alignment constraints e.g. boundary layers. Since full-hexahedra or full-quadrilaterals mesh generation methods cannot fulfil such requirements so far, we propose to use hybrid meshes, i.e. meshes containing both structured and unstructured elements. Accordingly, the following work focuses on hybrid metric-based mesh adaptation and CFD simulation on such meshes. Regarding hybrid mesh generation, the method relies on a preliminary mesh obtained through the so-called metric-orthogonal approach. These approaches utilize the directional information held by a prescribed metric-field to generate right angled elements, that can be combined into structured elements to form a hybrid mesh. The result highly depends on the quality of the metric field. Thus, emphasis is put on the size gradation control performed beforehand. This process is re-designed to favor metric-orthogonal meshes. To validate the method, some CFD simulations are performed. The modifications brought to an existing Finite Volume solver to enable such computations are detailed in this paper.}
+      \field{booktitle}{AIAA Scitech Forum}
+      \field{month}{1}
+      \field{title}{Hybrid anisotropic mesh adaptation using metric-orthogonal approach}
+      \field{year}{2021}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.2514/6.2021-1779
+      \endverb
+    \endentry
+    \entry{vanharen_aiaa_2018}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=c4fb842d8e8f786b7085f75cb322fa76}{%
+           family={Vanharen},
+           familyi={V\bibinitperiod},
+           given={Julien},
+           giveni={J\bibinitperiod}}}%
+        {{hash=7328dbc25b849f65159fbae86fc8f1a9}{%
+           family={Feuillet},
+           familyi={F\bibinitperiod},
+           given={Rémi},
+           giveni={R\bibinitperiod}}}%
+        {{hash=ec1626618a6c5d585acee8af2e3cd8c2}{%
+           family={Alauzet},
+           familyi={A\bibinitperiod},
+           given={Frédéric},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Atlanta, GA, USA}%
+      }
+      \strng{namehash}{e3912267372e864b1b4d72f1d1e46af2}
+      \strng{fullhash}{e3912267372e864b1b4d72f1d1e46af2}
+      \strng{bibnamehash}{e3912267372e864b1b4d72f1d1e46af2}
+      \strng{authorbibnamehash}{e3912267372e864b1b4d72f1d1e46af2}
+      \strng{authornamehash}{e3912267372e864b1b4d72f1d1e46af2}
+      \strng{authorfullhash}{e3912267372e864b1b4d72f1d1e46af2}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A new strategy for mesh adaptation dealing with Fluid-Structure Interaction (FSI) problems is presented using a partitioned approach. The Euler equations are solved by an edge-based Finite Volume solver whereas the linear elasticity equations are solved by the Finite Element Method using the Lagrange $P^1$ elements. The coupling between both codes is realized by imposing boundary conditions. Small displacements of the structure are assumed and so the mesh is not deformed. The computation of a well-documented FSI test case is finally carried out to perform validation of this new strategy. The capability of treating three-dimensional complex cases is also demonstrated.}
+      \field{booktitle}{AIAA Fluid Dynamics Conference}
+      \field{month}{6}
+      \field{title}{Mesh adaptation for fluid-structure interaction problems}
+      \field{year}{2018}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.2514/6.2018-3244
+      \endverb
+    \endentry
+    \entry{vanharen_phd}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=c4fb842d8e8f786b7085f75cb322fa76}{%
+           family={Vanharen},
+           familyi={V\bibinitperiod},
+           given={Julien},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Université de Toulouse}%
+      }
+      \strng{namehash}{c4fb842d8e8f786b7085f75cb322fa76}
+      \strng{fullhash}{c4fb842d8e8f786b7085f75cb322fa76}
+      \strng{bibnamehash}{c4fb842d8e8f786b7085f75cb322fa76}
+      \strng{authorbibnamehash}{c4fb842d8e8f786b7085f75cb322fa76}
+      \strng{authornamehash}{c4fb842d8e8f786b7085f75cb322fa76}
+      \strng{authorfullhash}{c4fb842d8e8f786b7085f75cb322fa76}
+      \field{sortinit}{6}
+      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This work deals with high-order numerical methods for unsteady flows around complex geometries. In order to cope with the low-order industrial Finite Volume Method, the proposed technique consists in computing on structured and unstructured zones with their associated schemes: this is called a hybrid approach. Structured and unstructured meshes are then coupled by a nonconforming grid interface. The latter is analyzed in details with special focus on unsteady flows. It is shown that a dedicated treatment at the interface avoids the reflection of spurious waves. Moreover, this hybrid approach is validated on several academic test cases for both convective and diffusive fluxes. The extension of this hybrid approach to high-order schemes is limited by the efficiency of unstructured high-order schemes in terms of computational time. This is why a new approach is explored: The Spectral Difference Method. A new framework is especially developed to perform the spectral analysis of Spectral Discontinuous Methods. The Spectral Difference Method seems to be a viable alternative in terms of computational time and number of points per wavelength needed for a given application to capture the flow physics.}
+      \field{month}{5}
+      \field{title}{High-Order Numerical Methods For Unsteady Flows Around Complex Geometries}
+      \field{year}{2017}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://jvanhare.github.io/pdf/PhD_Vanharen_2017.pdf
+      \endverb
+      \verb{url}
+      \verb https://jvanhare.github.io/pdf/PhD_Vanharen_2017.pdf
+      \endverb
+      \keyw{Finite Volume,Nonconforming Grid Interface,Hybrid Approach,High-Order Unstructured Schemes,Spurious Waves,Spectral Difference,Spectral Analysis}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

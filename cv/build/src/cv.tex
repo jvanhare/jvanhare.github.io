@@ -1,0 +1,124 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage{marvosym}
+\usepackage{fontspec}
+\usepackage{amssymb}
+\usepackage{pifont}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\usepackage{url}
+\usepackage{parskip}
+\usepackage{supertabular}
+\usepackage{titlesec}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage[absolute]{textpos}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[vmargin={1.5cm,1.5cm},hmargin={1.8cm,1.8cm}]{geometry}
+\usepackage[citestyle=numeric-comp,sorting=none,sortcites=false,autopunct=true,babel=hyphen,hyperref=true,abbreviate=false,backref=true,backend=biber,maxbibnames=99,date=year,isbn=false]{biblatex}
+
+\def\UrlFont{\normalfont}
+\DeclareFieldFormat{doi}{~\href{http://dx.doi.org/#1}{[#1]}}
+\DeclareFieldFormat{url}{~\href{#1}{[PDF]}}
+\DeclareFieldFormat*{pages}{#1}
+\DeclareFieldFormat*{journaltitle}{\textit{#1}}
+\DeclareFieldFormat*{booktitle}{\textit{#1}}
+\DeclareFieldFormat*{citetitle}{#1}
+\DeclareFieldFormat*{title}{\textbf{#1}}
+
+\renewbibmacro{in:}{}
+\renewbibmacro{mkbibquote}{}
+
+\defbibheading{bibempty}{}
+\addbibresource{../../bib/jvanhare.bib}
+
+\definecolor{linkcolour}{RGB}{86, 121, 163}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[Path = fonts/, SmallCapsFont = Fontin-SmallCaps.otf, BoldFont = Fontin-Bold.otf, ItalicFont = Fontin-Italic.otf]{Fontin.otf}
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+\setlength{\TPHorizModule}{30mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+\textblockorigin{2mm}{0.65\paperheight}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+\nocite{*}
+\pagestyle{empty}
+
+\begin{center}
+        {\Huge Julien \textsc{Vanharen}}
+    \smallskip\par{\Large Ph.D. in Computational Fluid Dynamics}
+\end{center}
+\smallskip
+
+\section{Personal Data}
+\begin{tabular}{rl}
+    \textsc{Place and Date of Birth:} & Soissons, France | July 31, 1989 \\
+    \textsc{Citizenship:}             & French                         \\
+    \textsc{Phone:}                   & +33 (0)6 60 74 88 16                               \\
+    \textsc{Email:}                   & \href{mailto:julien.vanharen@onera.fr}{julien.vanharen@onera.fr}      \\
+    \textsc{Website:}                 & \url{https://jvanhare.github.io/}                       \\
+    \textsc{Address:}                 & 22-24, avenue Marcellin Berthelot, Apt. A302, 92320 Châtillon France                             \\
+\end{tabular}
+
+\section{Professional Experience}
+\begin{tabular}{r|p{15cm}}
+            \textsc{Jun 2020}                                   & Research engineer                                                                     \\
+     & \href{https://www.onera.fr/en}{ONERA - The French Aerospace Lab} in Châtillon, France               \\
+                                                                               & \emph{\href{https://cedre.onera.fr/}{CEDRE} developer}                                                  \\
+                                                                               & \footnotesize{Development of the \href{https://cedre.onera.fr/}{CEDRE} suite. High-order and high-fidelity numerical methods. High Performance Computing optimization. } \\
+    \multicolumn{2}{c}{}                                                                                                                                             \\
+                \textsc{May 2017}                                   & Postdoctoral Fellow                                                                     \\
+    \textsc{May 2020} & \href{https://www.inria.fr/en/centre-inria-saclay-ile-de-france}{Inria Saclay - Île-de-France} in Palaiseau, France               \\
+                                                                               & \emph{Time-Accurate Anisotropic Mesh Adaptation for Fluid-Structure Interaction Simulations}                                                  \\
+                                                                               & \footnotesize{Implementation and validation of the Finite Element method for the unsteady linear elasticity equations. Coupling with a code solving the Euler equations based on the Finite Volume method. Development of error estimates for fluid-structure interaction applied to unsteady anisotropic mesh adaptation. Project RAPID funded by Direction Générale de l'Armement (DGA). } \\
+    \multicolumn{2}{c}{}                                                                                                                                             \\
+                                        \end{tabular}
+
+\section{Education}
+\begin{tabular}{r|p{15cm}}
+            \textsc{May 2014} & \href{https://jvanhare.github.io/pdf/PhD_Vanharen_2017.pdf}{Ph.D. in Computational Fluid Dynamics}                                          \\
+    \textsc{Apr 2017}   & \href{https://www.airbus.com}{AIRBUS} \& \href{https://www.univ-toulouse.fr/}{Université de Toulouse} in Toulouse, France \\
+                   & \emph{High-Order Numerical Methods For Unsteady Flows Around Complex Geometries}                                                                                                                                  \\                    & \footnotesize{Collaboration between \href{https://www.airbus.com}{AIRBUS} \& \href{https://cerfacs.fr}{CERFACS}. Several numerical methods \& codes are investigated for industrial applications. The coupling with a nonconforming grid interface of high-order schemes for structured and unstructured zones in \href{http://elsa.onera.fr}{elsA}. The Spectral Difference Method in \href{http://gpuigt.free.fr/jaguar.html}{JAGUAR}. The Lattice Boltzmann Methods in \href{http://www.prolb-cfd.com/}{ProLB}. }                                                                                 \\    \multicolumn{2}{c}{}                                                                                                                                                                                           \\
+                \textsc{Jul 2016} & Argonne Training Program on Extreme-Scale Computing (ATPESC)                                          \\
+    \textsc{Aug 2016}   &  \href{https://extremecomputingtraining.anl.gov}{Argonne National Laboratory} in Lemont, IL, USA \\
+                   & \emph{Intensive, two-week training on the key skills, approaches, and tools to design, implement, and execute computational science and engineering applications on current high-end computing systems and the leadership-class computing systems of the future}                                                                                                                                  \\                    & \footnotesize{Computer architectures and predicted evolution. Numerical algorithms and mathematical software. Approaches to building community codes for HPC systems. Data analysis, visualization, I/O, and methodologies and tools for big data applications. Performance measurement and debugging tools. }                                                                                 \\    \multicolumn{2}{c}{}                                                                                                                                                                                           \\
+                \textsc{Sep 2012} & M.Sc. Fluid Dynamics                                          \\
+    \textsc{Jun 2013}   &  \href{https://www.isae-supaero.fr/en/}{ISAE-SUPAERO} in Toulouse, France \\
+            \multicolumn{2}{c}{}                                                                                                                                                                                           \\
+                \textsc{Sep 2009} & M.Sc. Aerospace \& Aeronautical Engineering                                          \\
+    \textsc{Jun 2013}   &  \href{https://www.isae-supaero.fr/en/}{ISAE-SUPAERO} in Toulouse, France \\
+            \multicolumn{2}{c}{}                                                                                                                                                                                           \\
+                \end{tabular}
+
+\section{Teaching}
+\begin{tabular}{r|p{15cm}}
+        \textsc{Jun 2019} & Incompressible fluid mechanics [MF102]                                                     \\
+                                     & \href{https://www.ensta-paris.fr/}{ENSTA Paris} in Palaiseau, France \\
+    \multicolumn{2}{c}{}                                                                                       \\
+        \textsc{May 2016} & Fundamentals to understand and analyze high fidelity compressible Large Eddy Simulation (LES)                                                     \\
+                                     & \href{https://cerfacs.fr}{CERFACS} in Toulouse, France \\
+    \multicolumn{2}{c}{}                                                                                       \\
+    \end{tabular}
+
+\section{Languages}
+\begin{tabular}{rl}
+        \textsc{French} & Native proficiency \\
+        \textsc{English} & Full working proficiency \\
+        \textsc{German} & Good working knowledge \\
+        \textsc{Polish} & Basic communication skills \\
+    \end{tabular}
+
+\section{Publications}
+\printbibliography[heading=none, type=article]
+\section{Conferences}
+\printbibliography[heading=none, type=inproceedings]
+\section{Thesis}
+\printbibliography[heading=none, type=thesis]
+
+\end{document}

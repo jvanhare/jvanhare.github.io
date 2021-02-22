@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{w2l6:function(e,t,n){"use strict";n.r(t);var a=n("q1tI"),r=n.n(a),u=n("7vrA"),l=n("8k0H");t.default=function(){return r.a.createElement(l.a,null,r.a.createElement(u.a,{fluid:!0},r.a.createElement("h1",null,"Sorry! But the requested page does not exist!")))}}}]);
+//# sourceMappingURL=component---src-pages-404-js-e7463a4520d19670c41c.js.map

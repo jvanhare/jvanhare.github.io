@@ -1,0 +1,24 @@
+[0] Config.pm:304> INFO - This is Biber 2.14
+[0] Config.pm:307> INFO - Logfile is 'cv.blg'
+[98] biber-darwin:322> INFO - === Mon Feb 22, 2021, 22:58:42
+[125] Biber.pm:415> INFO - Reading 'cv.bcf'
+[228] Biber.pm:940> INFO - Using all citekeys in bib section 0
+[245] Biber.pm:4256> INFO - Processing section 0
+[245] Utils.pm:75> INFO - Globbing data source '../../bib/jvanhare.bib'
+[246] Utils.pm:91> INFO - Globbed data source '../../bib/jvanhare.bib' to ../../bib/jvanhare.bib
+[269] Biber.pm:4455> INFO - Looking for bibtex format file '../../bib/jvanhare.bib' for section 0
+[271] bibtex.pm:1653> INFO - LaTeX decoding ...
+[295] bibtex.pm:1471> INFO - Found BibTeX data source '../../bib/jvanhare.bib'
+[314] Utils.pm:304> WARN - month field 'January' in entry 'tenkes_aiaa_2021' is not an integer - this will probably not sort properly.
+[323] Utils.pm:304> WARN - month field 'March' in entry 'vanharen_jcp_285_2015' is not an integer - this will probably not sort properly.
+[330] Utils.pm:304> WARN - month field 'January' in entry 'vanharen_aiaa_2021' is not an integer - this will probably not sort properly.
+[338] Utils.pm:304> WARN - month field 'May' in entry 'vanharen_jcp_337_2017' is not an integer - this will probably not sort properly.
+[348] Utils.pm:304> WARN - month field 'June' in entry 'vanharen_aiaa_2018' is not an integer - this will probably not sort properly.
+[355] Utils.pm:304> WARN - month field 'May' in entry 'vanharen_phd' is not an integer - this will probably not sort properly.
+[374] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[375] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[375] Biber.pm:4084> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[375] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
+[390] bbl.pm:652> INFO - Writing 'cv.bbl' with encoding 'UTF-8'
+[398] bbl.pm:755> INFO - Output to cv.bbl
+[398] Biber.pm:128> INFO - WARNINGS: 6
