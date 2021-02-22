@@ -1,0 +1,17 @@
+.BarChart {
+  background-color: var(--color-primary);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: row;
+  height: 10px;
+  width: inherit;
+  overflow: hidden;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.BarData {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

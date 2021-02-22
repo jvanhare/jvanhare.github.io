@@ -53,6 +53,7 @@ module.exports = {
         path: `${__dirname}/static/fig`
       },
     },
+    `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

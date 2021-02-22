@@ -35,21 +35,23 @@ export default class Experience extends React.Component {
         /* Render item. */
         if (show) {
             return (
-                <Container fluid>
-                    <h3>{title}</h3>
-                    <p>
-                        <a href={company_url}>{company}</a> <br />
-                        <span className="text-muted">{location}</span> <br />
-                        {date}
-                    </p>
-                    <i>
-                        <Fragment>
-                            <div dangerouslySetInnerHTML={{ __html: description }} />
-                        </Fragment>
-                    </i>
-                    <br/>
-                    {obj}
-                </Container >
+                <div className="timeline">
+                    <Container fluid>
+                        <h3>{title}</h3>
+                        <p>
+                            <a href={company_url}>{company}</a> <br />
+                            <span className="text-muted">{location}</span> <br />
+                            {date}
+                        </p>
+                        <i>
+                            <Fragment>
+                                <div dangerouslySetInnerHTML={{ __html: description }} />
+                            </Fragment>
+                        </i>
+                        <br />
+                        {obj}
+                    </Container >
+                </div>
             )
         }
         return (null)

@@ -28,6 +28,7 @@ export default class Education extends React.Component {
         if (this.props.data.objectives)
             obj =
                 <ul>
+                    <br />
                     {this.props.data.objectives.map((edu, index) => {
                         return <li key={`obj_edu_${index}`}>
                             <Fragment>
@@ -39,21 +40,22 @@ export default class Education extends React.Component {
         /* Render item. */
         if (show) {
             return (
-                <Container fluid>
-                    <h3>{title}</h3>
-                    <p>
-                        {institution} <br />
-                        <span className="text-muted">{location}</span> <br />
-                        {date_start} - {date_end}
-                    </p>
-                    <i>
-                        <Fragment>
-                            <div dangerouslySetInnerHTML={{ __html: description }} />
-                        </Fragment>
-                    </i>
-                    <br/>
-                    {obj}
-                </Container >
+                <div className="timeline">
+                    <Container fluid>
+                        <h3>{title}</h3>
+                        <p>
+                            {institution} <br />
+                            <span className="text-muted">{location}</span> <br />
+                            {date_start} - {date_end}
+                        </p>
+                        <i>
+                            <Fragment>
+                                <div dangerouslySetInnerHTML={{ __html: description }} />
+                            </Fragment>
+                        </i>
+                        {obj}
+                    </Container >
+                </div>
             )
         }
         return (null)

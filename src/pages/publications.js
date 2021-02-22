@@ -10,7 +10,7 @@ import Article from "../components/bibtex/article"
 import Conference from "../components/bibtex/conference"
 import PhD from "../components/bibtex/phd"
 /* Import my CSS. */
-import "../scss/main.scss";
+import "../scss/main.scss"
 
 export default function Publications({ data }) {
   return (
@@ -29,7 +29,7 @@ export default function Publications({ data }) {
             <Conference key={`conference_${index}`} data={node} />
           ))}
         </ol>
-        <h2>Theses</h2>
+        <h2>Thesis</h2>
         <ol>
           {data.phd.edges.map(({ node }, index) => (
             <PhD key={`phd_${index}`} data={node} />
@@ -80,7 +80,7 @@ query {
     reference {
       id
     }
-    phd: allReference(filter: {entry_type: {eq: "phdthesis"}, authors: {in: "Julien Vanharen"}}) {
+    phd: allReference(filter: {entry_type: {eq: "thesis"}, authors: {in: "Julien Vanharen"}}) {
       edges {
         node {
           title
@@ -88,7 +88,7 @@ query {
           school
           month
           year
-          pdf
+          url
         }
       }
       pageInfo {

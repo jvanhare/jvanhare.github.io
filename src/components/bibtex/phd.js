@@ -10,11 +10,10 @@ export default class PhD extends React.Component {
             <li>
                 {data.authors}.&nbsp;
                 <b>{data.title}.</b>&nbsp;
-                <i>Ph.D. thesis</i>.&nbsp;
-                {data.school}.&nbsp;
+                {data.school},&nbsp;
                 {data.month}&nbsp;
                 {data.year}.&nbsp;
-                <Button style={{ display: "inline" }} size="sm" variant="outline-primary" href={"/pdf/" + data.pdf}>PDF</Button>
+                <Button style={{ display: "inline" }} size="sm" variant="outline-primary" href={data.url}>PDF</Button>
             </li>
         )
     }

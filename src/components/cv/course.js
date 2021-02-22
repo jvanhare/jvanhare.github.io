@@ -40,7 +40,7 @@ export default class Teaching extends React.Component {
                         <div dangerouslySetInnerHTML={{ __html: description }} />
                     </Fragment>
                 </i>
-                <br/>
+                <br />
                 {obj}
             </Container >
         )
