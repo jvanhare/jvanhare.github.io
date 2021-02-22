@@ -5,7 +5,6 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 /* Import my components. */
 import Layout from "../components/layout/layout"
-import Avatar from "../components/avatar"
 /* Import my CSS. */
 import "../scss/main.scss";
 /* Import my yaml data. */
@@ -17,39 +16,39 @@ export default class About extends React.Component {
       { year: 'numeric', month: 'long' });
     return (
       <Layout>
-          <Row>
-            <Col sm={12} md={4} align="center">
-              <Avatar />
-              {cv.name}<br />
-              {cv.position}<br />
-              <a href={cv.company.website}>{cv.company.name} - {cv.company.team}</a><br />
-              <a href={cv.company.website}>{cv.company.name_alt}</a>
-            </Col>
-            <Col sm={12} md={8} align="left">
-              <h1>About</h1>
-              <p>
-                Since {date}, I am a research engineer in the&nbsp;
+        <Row>
+          <Col sm={12} md={4} align="center">
+            <img src={'/fig/photo_square.jpg'} style={{ borderRadius: "50%", width: 250, height: 250, margin: "10px" }} className="center" alt="" /> <br />
+            {cv.name}<br />
+            {cv.position}<br />
+            <a href={cv.company.website}>{cv.company.name} - {cv.company.team}</a><br />
+            <a href={cv.company.website}>{cv.company.name_alt}</a>
+          </Col>
+          <Col sm={12} md={8} align="left">
+            <h1>About</h1>
+            <p>
+              Since {date}, I am a research engineer in the&nbsp;
                 {cv.company.team} team at&nbsp;
                 <a href={cv.company.website}>{cv.company.name}</a>,&nbsp;
                 <a href={cv.company.website}>{cv.company.name_alt}</a>.
                 This team is composed of the main developpers of the&nbsp;
                 <a href="https://cedre.onera.fr/">CEDRE</a> suite.
               </p>
-              <p>
-                My reasearch interests lie in numerical methods and tools for
-                Computational Fluid Dynamics (CFD).
-                I am working on high-order and high-fidelity numerical methods
-                and high-order anisotropic mesh adaptation to perform
-                Large Eddy Simulation around complex geometries.
+            <p>
+              My reasearch interests lie in numerical methods and tools for
+              Computational Fluid Dynamics (CFD).
+              I am working on high-order and high-fidelity numerical methods
+              and high-order anisotropic mesh adaptation to perform
+              Large Eddy Simulation around complex geometries.
                </p>
-              <h2>Research interests</h2>
-              <ul>
-                {cv.research_interests.map((key, index) => {
-                  return <li key={`key_item_${index}`}>{key.keyword}</li>
-                })}
-              </ul>
-            </Col>
-          </Row>
+            <h2>Research interests</h2>
+            <ul>
+              {cv.research_interests.map((key, index) => {
+                return <li key={`key_item_${index}`}>{key.keyword}</li>
+              })}
+            </ul>
+          </Col>
+        </Row>
       </Layout>
     )
   }

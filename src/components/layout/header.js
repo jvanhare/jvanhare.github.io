@@ -26,7 +26,7 @@ export default class Header extends React.Component {
             <Nav.Link href={cv.github}><FontAwesomeIcon icon={faGithub} /></Nav.Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar">
-            <FontAwesomeIcon icon={faBars} className="text-info" />
+            <FontAwesomeIcon icon={faBars} className="text-primary" />
           </Navbar.Toggle>
           <Navbar.Collapse id="responsive-navbar">
             <Nav className="ml-auto">

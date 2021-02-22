@@ -37,7 +37,7 @@ experience:
     date_start: 2020-06-01
     description: <a href="https://cedre.onera.fr/" target="\_blank">CEDRE</a> developer
     objectives:
-      - obj: Development of the <a href='https://cedre.onera.fr/' target="\_blank">CEDRE</a> suite
+      - obj: Development of the <a href="https://cedre.onera.fr/" target="\_blank">CEDRE</a> suite
       - obj: High-order and high-fidelity numerical methods
       - obj: High Performance Computing optimization
 
@@ -105,7 +105,7 @@ experience:
       - obj: Selected to be part of the EADS Junior Programme.
 
 education:
-  - title: Ph.D. Computational Fluid Dynamics
+  - title: Ph.D. in Computational Fluid Dynamics
     show: true
     pdf: PhD_Vanharen_2017.pdf
     company: AIRBUS
@@ -117,11 +117,11 @@ education:
     date_end: 2017-04-30
     description: High-Order Numerical Methods For Unsteady Flows Around Complex Geometries
     objectives:
-      - obj: Collaboration between <a href='https://www.airbus.com' target="\_blank">AIRBUS</a> & <a href='https://cerfacs.fr' target="\_blank">CERFACS</a>
+      - obj: Collaboration between <a href="https://www.airbus.com" target="\_blank">AIRBUS</a> & <a href="https://cerfacs.fr" target="\_blank">CERFACS</a>
       - obj: Several numerical methods & codes are investigated for industrial applications
-      - obj: The coupling with a nonconforming grid interface of high-order schemes for structured and unstructured zones in <a href='http://elsa.onera.fr' target="\_blank">elsA</a>
-      - obj: The Spectral Difference Method in <a href='http://gpuigt.free.fr/jaguar.html' target="\_blank">JAGUAR</a>
-      - obj: The Lattice Boltzmann Methods in <a href='http://www.prolb-cfd.com/' target="\_blank">ProLB</a>
+      - obj: The coupling with a nonconforming grid interface of high-order schemes for structured and unstructured zones in <a href="http://elsa.onera.fr" target="\_blank">elsA</a>
+      - obj: The Spectral Difference Method in <a href="http://gpuigt.free.fr/jaguar.html" target="\_blank">JAGUAR</a>
+      - obj: The Lattice Boltzmann Methods in <a href="http://www.prolb-cfd.com/" target="\_blank">ProLB</a>
 
   - title: Argonne Training Program on Extreme-Scale Computing (ATPESC)
     show: true

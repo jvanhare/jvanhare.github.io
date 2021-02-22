@@ -1,47 +1,40 @@
 \documentclass[a4paper,10pt]{article}
-
 \usepackage{marvosym}
 \usepackage{fontspec}
 \usepackage{amssymb}
 \usepackage{pifont}
-\usepackage{xunicode,xltxtra,url,parskip}
-\usepackage[usenames,dvipsnames]{xcolor}
-\usepackage[vmargin={1.5cm,1.5cm},hmargin={1.8cm,1.8cm}]{geometry}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\usepackage{url}
+\usepackage{parskip}
 \usepackage{supertabular}
 \usepackage{titlesec}
 \usepackage{array}
 \usepackage{multirow}
 \usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{tabularx}
 \usepackage[absolute]{textpos}
-%\usepackage{bibunits}
-\usepackage{booktabs,tabularx}
-\usepackage[style=src/custom,citestyle=numeric-comp,sorting=none,sortcites=false,
-      autopunct=true,babel=hyphen,hyperref=true,abbreviate=false,
-      backref=true,backend=biber,maxbibnames=99,
-      date=year,isbn=false]{biblatex}
-\AtEveryBibitem{\clearfield{doi}}
-\DeclareSourcemap{\maps[datatype=bibtex]{\map{\step[fieldsource=author,match=Vanharen,final]\step[fieldset=keywords, fieldvalue=Vanharen]}}}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[vmargin={1.5cm,1.5cm},hmargin={1.8cm,1.8cm}]{geometry}
+\usepackage[citestyle=numeric-comp,sorting=none,sortcites=false,autopunct=true,babel=hyphen,hyperref=true,abbreviate=false,backref=true,backend=biber,maxbibnames=99,date=year,isbn=false]{biblatex}
 
 \def\UrlFont{\normalfont}
-\DeclareFieldFormat{doi}{~\url{http://dx.doi.org/#1}}
-\DeclareFieldFormat{url}{~\url{http://pages.saclay.inria.fr/julien.vanharen/#1}}
+\DeclareFieldFormat{doi}{~\href{http://dx.doi.org/#1}{[#1]}}
+\DeclareFieldFormat{url}{~\href{#1}{[PDF]}}
 \DeclareFieldFormat*{pages}{#1}
-\DeclareFieldFormat*{year}{(#1)}
-\DeclareFieldFormat*{date}{(#1)}
-\DeclareFieldFormat*{number}{(#1)}
 \DeclareFieldFormat*{journaltitle}{\textit{#1}}
-\DeclareFieldFormat*{booktitle}{#1}
+\DeclareFieldFormat*{booktitle}{\textit{#1}}
 \DeclareFieldFormat*{citetitle}{#1}
-\DeclareFieldFormat*{title}{#1}
+\DeclareFieldFormat*{title}{\textbf{#1}}
 
 \renewbibmacro{in:}{}
 \renewbibmacro{mkbibquote}{}
 
 \defbibheading{bibempty}{}
-\addbibresource{src/biblio.bib}
-\include{abbr_journal}
+\addbibresource{../../bib/jvanhare.bib}
 
-\definecolor{linkcolour}{RGB}{0,129,168}
+\definecolor{linkcolour}{RGB}{86, 121, 163}
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
 \defaultfontfeatures{Mapping=tex-text}
 \setmainfont[Path = fonts/, SmallCapsFont = Fontin-SmallCaps.otf, BoldFont = Fontin-Bold.otf, ItalicFont = Fontin-Italic.otf]{Fontin.otf}
@@ -53,173 +46,74 @@
 \setlength{\parindent}{0pt}
 
 \begin{document}
+
+\nocite{*}
 \pagestyle{empty}
-\par{\begin{center}
-        {\Huge Julien \textsc{Vanharen}}
-        \smallskip\par{\Large Ph.D. in Computational Fluid Dynamics} \end{center}}
-\smallskip\par
+
+\begin{center}
+    \BLOCK{ set name = name.split(' ') }
+    {\Huge \VAR{name[0]} \textsc{\VAR{name[1]}}}
+    \smallskip\par{\Large Ph.D. in Computational Fluid Dynamics}
+\end{center}
+\smallskip
 
 \section{Personal Data}
 \begin{tabular}{rl}
-    \textsc{Place and Date of Birth:} & Soissons, France | 31 July 1989                                        \\
-    \textsc{Citizenship:}             & French                                                                 \\
-    \textsc{Phone:}                   & +33 (0) 6 60 74 88 16                                                  \\
-    \textsc{Email:}                   & \href{mailto:julien.vanharen@gmail.com}{julien.vanharen@gmail.com}     \\
-    \textsc{Website:}                 & \url{http://pages.saclay.inria.fr/julien.vanharen/}                    \\
-    \textsc{Address:}                 & 22-24, avenue Marcellin Berthelot, Apt. A302, 92320 Ch\^atillon France \\
-                                      & Available to relocate nationwide                                       \\
+    \textsc{Place and Date of Birth:} & \VAR{birth_place} | \VAR{birth_date|date} \\
+    \textsc{Citizenship:}             & \VAR{citizenship}                         \\
+    \textsc{Phone:}                   & \VAR{phone}                               \\
+    \textsc{Email:}                   & \href{mailto:\VAR{mail}}{\VAR{mail}}      \\
+    \textsc{Website:}                 & \url{\VAR{website}}                       \\
+    \textsc{Address:}                 & \VAR{address}                             \\
 \end{tabular}
 
-\section{Work Experience}
+\section{Professional Experience}
 \begin{tabular}{r|p{15cm}}
-
-    \textsc{May 2017} & Post-Doc at \textsc{INRIA} in Saclay, France                                                                                               \\
-                      & \emph{Time-Accurate Anisotropic Mesh Adaptation for Fluid Structure Interaction Simulations}                                               \\
-                      & \footnotesize{Implementation and validation of the Finite Element Method for the unsteady linear elasticity equations.
-        Coupling with a code solving the Euler equations based on the Finite Volume Method. Development of error estimates
-        for fluid structure interaction applied to unsteady anisotropic mesh adaptation.
-        Project RAPID funded by DGA (Direction G\'en\'erale de l'Armement). }                                                                                      \\
-    \multicolumn{2}{c}{}                                                                                                                                           \\
-
-    \textsc{Aug 2016} & Argonne Training Program on Extreme-Scale Computing (ATPESC 2016) in St. Charles, IL, USA                                                  \\
-                      & \footnotesize{Intensive, two-week training on the key skills, approaches, and tools
-        to design, implement, and execute computational science and engineering applications
-        on current high-end computing systems and the leadership-class computing systems of the future.}                                                           \\
-    \multicolumn{2}{c}{}                                                                                                                                           \\
-
-    \textsc{May 2014} & \href{http://pages.saclay.inria.fr/julien.vanharen/files/phd.pdf}{Ph.D. Thesis} at \textsc{AIRBUS} \& \textsc{CERFACS} in Toulouse, France \\
-    \textsc{Apr 2017} & \emph{High-Order Numerical Methods For Unsteady Flows Around Complex Geometries}                                                           \\
-                      & \footnotesize{Several numerical methods \& codes are investigated for industrial applications, among them the coupling with a
-        nonconforming grid interface of high-order schemes for structured and unstructured
-        zones in \href{http://elsa.onera.fr}{\emph{elsA}},
-        the Spectral Difference Method in \href{http://www.cerfacs.fr/~puigt/jaguar.html}{\emph{\textsc{Jaguar}}}
-        and the Lattice Boltzmann Methods in \href{http://www.prolb-cfd.com}{\emph{\textsc{ProLB}}}.}                                                              \\
-    \multicolumn{2}{c}{}                                                                                                                                           \\
-
-    \textsc{Jan 2014} & Study Engineer at \textsc{CERFACS} in Toulouse, France                                                                                     \\
-    \textsc{Mar 2014} & \emph{Computational Fluid Dynamics \& High-Order Numerical Methods}                                                                        \\
-                      & \footnotesize{URANS computations on unstructured meshes \& stability of the Spectral Difference Method.}                                   \\
-    \multicolumn{2}{c}{}                                                                                                                                           \\
-
-    \textsc{Apr 2013} & Research Intern at \textsc{CERFACS} in Toulouse, France                                                                                    \\
-    \textsc{Sep 2013} & \emph{Numerical Methods}                                                                                                                   \\
-                      & \footnotesize{Theorerical and numerical analysis of nonconforming grid interface between structured blocks
-        for Large Eddy Simulation. Implementation inside the \href{http://elsa.onera.fr}{\emph{elsA}}
-        software of a Riemann solver at the interface.}                                                                                                            \\
-    \multicolumn{2}{c}{}                                                                                                                                           \\
-
-    \textsc{Jun 2012} & Engineering Intern at \textsc{AIRBUS} in Bremen, Germany                                                                                   \\
-    \textsc{Aug 2012} & \emph{Handling Qualities}                                                                                                                  \\
-                      & \footnotesize{A340-600 MSN360 flight test analysis: effect of the vortex generators on rudder efficiency.}                                 \\
-    \multicolumn{2}{c}{}                                                                                                                                           \\
-
-    \textsc{Jul 2011} & Engineering Intern at \textsc{AIRBUS} in Toulouse, France                                                                                  \\
-    \textsc{May 2012} & \emph{Methods \& Tools}                                                                                                                    \\
-                      & \footnotesize{Unsteady aerodynamics: gust and aileron deflection effect on aircraft behaviour.
-        Extension and improvement of CFD methods to predict flutter thanks to dynamic coupling.
-        Selected to be part of the \emph{EADS Junior Programme}.}
+    \BLOCK{for exp in experience}
+    \BLOCK{if exp.show}
+    \textsc{\VAR{exp.date_start|date_month}}                                   & \VAR{exp.title}                                                                     \\
+    \BLOCK{if exp.date_end}\textsc{\VAR{exp.date_end|date_month}}\BLOCK{endif} & \href{\VAR{exp.company_url}}{\VAR{exp.company}} in \VAR{exp.location}               \\
+                                                                               & \emph{\VAR{exp.description|latex}}                                                  \\
+                                                                               & \footnotesize{\BLOCK{for obj in exp.objectives}\VAR{obj.obj|latex}. \BLOCK{endfor}} \\
+    \multicolumn{2}{c}{}                                                                                                                                             \\
+    \BLOCK{endif}
+    \BLOCK{endfor}
 \end{tabular}
 
 \section{Education}
 \begin{tabular}{r|p{15cm}}
-    \textsc{Aug} 2009 & \textbf{ISAE-Supa\'ero} in Toulouse, France.                                                                               \\
-    \textsc{Nov} 2013 & ``Dipl\^{o}me d'ing\'{e}nieur'' in \textsc{Aerospace Engineering}.                                                         \\
-                      & Major: Aerodynamics.                                                                                                       \\
-                      & \textsc{Research Master} in fluid dynamics.                                                                                \\
-    \multicolumn{2}{c}{}                                                                                                                           \\
-
-    \textsc{Sep} 2007 & \textbf{Lycée Faidherbe} in Lille, France.                                                                                 \\
-    \textsc{Jun} 2009 & Undergraduate studies in a national preparatory program for entrance into France state run graduate school of engineering. \\
-    \multicolumn{2}{c}{}                                                                                                                           \\
+    \BLOCK{for edu in education}
+    \BLOCK{if edu.show}
+    \textsc{\VAR{edu.date_start|date_month}} & \BLOCK{if edu.pdf}\href{\VAR{website}pdf/\VAR{edu.pdf}}{\BLOCK{endif}\VAR{edu.title|latex}\BLOCK{if edu.pdf}}\BLOCK{endif}                                          \\
+    \textsc{\VAR{edu.date_end|date_month}}   & \BLOCK{if edu.company}\href{\VAR{edu.company_url}}{\VAR{edu.company}} \&\BLOCK{endif} \href{\VAR{edu.institution_url}}{\VAR{edu.institution}} in \VAR{edu.location} \\
+    \BLOCK{if edu.description}               & \emph{\VAR{edu.description|latex}}                                                                                                                                  \\\BLOCK{endif}
+    \BLOCK{if edu.objectives}                & \footnotesize{\BLOCK{for obj in edu.objectives}\VAR{obj.obj|latex}. \BLOCK{endfor}}                                                                                 \\\BLOCK{endif}
+    \multicolumn{2}{c}{}                                                                                                                                                                                           \\
+    \BLOCK{endif}
+    \BLOCK{endfor}
 \end{tabular}
 
 \section{Teaching}
 \begin{tabular}{r|p{15cm}}
-    \textsc{May} 2016 & Training session at \textbf{CERFACS} in Toulouse, France.                                \\
-                      & Fundamentals to understand and analyze high fidelity compressible Large Eddy Simulation. \\
-    \multicolumn{2}{c}{}                                                                                         \\
-
-    \textsc{Jun} 2019 & \textbf{ENSTA} in Palaiseau, France.                                                     \\
-                      & Incompressible fluid mechanics (MF102).                                                  \\
-\end{tabular}
-
-\section{Skills}
-\begin{tabular}{rl}
-    \textsc{Systems}        & UNIX, Linux, Mac OS X, HPC.                                                                            \\
-    \textsc{Simulation}     & \href{http://pages.saclay.inria.fr/frederic.alauzet/}{Wolf}, \href{http://elsa.onera.fr}{\emph{elsA}},
-    \href{http://gpuigt.free.fr/jaguar.html}{\emph{\textsc{Jaguar}}},
-    \href{http://www.prolb-cfd.com}{\emph{\textsc{ProLB}}}.                                                                          \\
-    \textsc{Programming}    & C/C++, F90, Python, OpenMP, MPI, CMake, \href{http://cgns.github.io}{CGNS}.                            \\
-    \textsc{Meshing}        & \href{http://www.meshgems.com}{GHS3D}, \href{https://pyamg.saclay.inria.fr/}{Feflo.a},
-    \href{https://www.centaursoft.com}{Centaur}, \href{https://www.beta-cae.com/ansa.htm}{Ansa}, \href{http://gmsh.info}{Gmsh}.      \\
-    \textsc{Automation}     & {\fontfamily{cmr}\selectfont \LaTeX}, Keynote, Microsoft Office Suite.                                 \\
-    \textsc{Post-Treatment} & \href{http://vizir.inria.fr/}{Vizir}, \href{http://cerfacs.fr/antares}{Antares},
-    \href{https://www.paraview.org}{Paraview}, \href{https://www.tecplot.com}{Tecplot}.                                              \\
-    \textsc{Reviewer}       & Journal of Computational Physics.
+    \BLOCK{for t in teaching}
+    \textsc{\VAR{t.date|date_month}} & \VAR{t.title|latex}                                                     \\
+                                     & \href{\VAR{t.institution_url}}{\VAR{t.institution}} in \VAR{t.location} \\
+    \multicolumn{2}{c}{}                                                                                       \\
+    \BLOCK{endfor}
 \end{tabular}
 
 \section{Languages}
 \begin{tabular}{rl}
-    \textsc{French}  & Native proficiency.                                    \\
-    \textsc{English} & Full working proficiency: \textsc{TOEFL ITP} 550 (B2). \\
-    \textsc{German}  & Good working knowledge.                                \\
-    \textsc{Polish}  & Basic communication skills.
+    \BLOCK{for l in lang}
+    \textsc{\VAR{l.name}} & \VAR{l.level} \\
+    \BLOCK{endfor}
 \end{tabular}
 
-\nocite{*}
 \section{Publications}
-\newrefcontext[sorting=ynt]
-\printbibliography[heading=none, sorting=ynt, type=article]
+\printbibliography[heading=none, type=article]
 \section{Conferences}
-\newrefcontext[sorting=ynt]
-\printbibliography[heading=none, sorting=ynt, type=inproceedings]
-
-\section{References}
-\begin{tabular}{l}
-    Dr. HdR. Guillaume Puigt                                                     \\
-    Ma\^itre de recherche 1 \textsc{ONERA}                                       \\
-    \textsc{ONERA} - The French Aerospace Lab                                    \\
-    Unit\'e HEAT - D\'epartement DMPE                                            \\
-    2 avenue Edouard Belin                                                       \\
-    BP 74025 - 31055 Toulouse CEDEX 04, France                                   \\
-    \ding{37} +33 (0) 5 62 25 29 40                                              \\
-    \ding{41} \href{mailto:guillaume.puigt@onera.fr}{guillaume.puigt@onera.fr}   \\
-    \\
-    Dr. HdR. Fr\'ed\'eric Alauzet                                                \\
-    Directeur de recherche                                                       \\
-    \textsc{INRIA} Saclay - \^Ile-de-France                                      \\
-
-    Bâtiment Alan Turing                                                         \\
-    1 rue Honoré d'Estienne d'Orves                                              \\
-    91120 Palaiseau, France                                                      \\
-    \ding{37} +33 (0) 1 77 57 80 91                                              \\
-    \ding{41} \href{mailto:frederic.alauzet@inria.fr}{frederic.alauzet@inria.fr} \\
-    % \\
-    % Dr. Adrien Loseille                                                            \\
-    % Charg\'e de recherche                                                          \\
-    % \textsc{INRIA} Saclay - \^Ile-de-France                                        \\
-    % Bâtiment Alan Turing                                                           \\
-    % 1 rue Honoré d'Estienne d'Orves                                                \\
-    % 91120 Palaiseau, France                                                        \\
-    % \ding{37} +33 (0) 1 77 57 80 15                                                \\
-    % \ding{41} \href{mailto:adrien.loseille@inria.fr}{adrien.loseille@inria.fr}     \\
-    % \\
-    % Dr. Alo\"is Sengissen                                                          \\
-    % Aeroacoustic engineer                                                          \\
-    % \textsc{AIRBUS} Operations \textsc{S.A.S.}                                     \\
-    % PO Box M0112/4                                                                 \\
-    % 316 route de Bayonne                                                           \\
-    % 31060 Toulouse CEDEX 09, France                                                \\
-    % \ding{37} +33 (0) 5 61 93 67 86                                                \\
-    % \ding{41} \href{mailto:alois.sengissen@airbus.com}{alois.sengissen@airbus.com} \\
-    \\
-    Dr. Xavier Vasseur                                                           \\
-    Ing\'enieur chercheur                                                        \\
-    \textsc{ISAE - SUPAERO}                                                      \\
-    10 avenue \'Edouard Belin                                                    \\
-    BP 54032 - 31055 Toulouse CEDEX 04, France                                   \\
-    \ding{37} +33 (0) 5 61 33 87 32                                              \\
-    \ding{41} \href{mailto:xavier.vasseur@isae-supaero.fr}{xavier.vasseur@isae-supaero.fr}
-\end{tabular}
+\printbibliography[heading=none, type=inproceedings]
+\section{Thesis}
+\printbibliography[heading=none, type=thesis]
 
 \end{document}
