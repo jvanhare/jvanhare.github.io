@@ -1,0 +1,21 @@
+rule wget
+    command = wget -q -O $out $input
+    description = Download $input to $out
+rule yaml_to_json
+    command = horus convert -q -i $in -o $out
+    description = Convertn $in to $out
+rule bib_to_json
+    command = yarn run -s citation-js -i $in -o $output
+
+# Download all data files. #####################################################
+build src/data/jvanhare.md: wget
+    input = https://raw.githubusercontent.com/jvanhare/jvanhare/master/README.md
+build src/data/cv.yaml: wget
+    input = https://raw.githubusercontent.com/jvanhare/cv/master/src/cv.yaml
+build src/data/bibliography.bib: wget
+    input = https://raw.githubusercontent.com/jvanhare/bibliography/master/src/jvanhare.bib
+
+# Convert data files to JSON. ##################################################
+build src/data/cv.json: yaml_to_json src/data/cv.yaml
+build src/data/bibliography.json: bib_to_json src/data/bibliography.bib
+    output = src/data/bibliography
