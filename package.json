@@ -5,7 +5,7 @@
         "build": "next build",
         "postbuild": "next export -o build",
         "start": "next start",
-        "prebuild": "ninja -t clean && ninja"
+        "ninja": "ninja -t clean && ninja"
     },
     "dependencies": {
         "@headlessui/react": "^1.7.7",
