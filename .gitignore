@@ -19,6 +19,9 @@
 .DS_Store
 *.pem
 .ninja_log
+public/robots.txt
+public/sitemap-0.xml
+public/sitemap.xml
 
 # debug
 npm-debug.log*
