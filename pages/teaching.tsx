@@ -27,7 +27,7 @@ export default function Teaching(): JSX.Element {
           <div className="italic">{t.description}.</div>
           <ol className="mx-4 my-4">
             {t.objectives.map((o) => (
-              <li className="list-disc list-inside pt-0 mb-0" key={o}>
+              <li className="list-disc list-outside pt-0 mb-0 ml-4" key={o}>
                 {o}
               </li>
             ))}

@@ -59,7 +59,7 @@ export default function CV(): JSX.Element {
           <div className="italic">{p.description}</div>
           <ol className="mx-4 mt-4">
             {p.objectives.map((o) => (
-              <li className="list-disc list-inside pt-0 mb-0" key={o}>
+              <li className="list-disc list-outside pt-0 mb-0 ml-4" key={o}>
                 {o}
               </li>
             ))}
@@ -108,7 +108,7 @@ export default function CV(): JSX.Element {
           <ol className="mx-4 mt-4">
             {e.objectives != null &&
               e.objectives.map((o) => (
-                <li className="list-disc list-inside pt-0 mb-0" key={o}>
+                <li className="list-disc list-outside pt-0 mb-0 ml-4" key={o}>
                   {o}
                 </li>
               ))}

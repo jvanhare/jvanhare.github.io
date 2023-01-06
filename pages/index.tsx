@@ -33,7 +33,7 @@ export default function Index({ content }: Props): JSX.Element {
           components={{
             ul: ({ children }) => <ul className="mx-4 my-4">{children}</ul>,
             li: ({ children }) => (
-              <li className="list-disc list-inside pt-0 mb-0">{children}</li>
+              <li className="list-disc list-outside pt-0 mb-0 ml-4">{children}</li>
             ),
             a: ({ children, ...props }) => (
               <a
