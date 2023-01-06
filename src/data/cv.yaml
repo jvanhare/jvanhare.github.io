@@ -138,7 +138,7 @@ professional_experience:
 # EDUCATION ########################################################################################
 education:
   - title: Ph.D. in Computational Fluid Dynamics
-    pdf: http://www.theses.fr/2017INPT0030/document
+    pdf: https://jvanhare.github.io/pdf/vanharen_phd.pdf
     company_name: AIRBUS
     company_url: http://www.airbus.com
     institution_name: Université de Toulouse

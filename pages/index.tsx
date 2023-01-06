@@ -25,7 +25,7 @@ export default function Index({ content }: Props): JSX.Element {
     <Layout>
       <div>
         <img
-          className="w-32 md:w-64 rounded-full float-left mx-4 my-2 md:my-12 align-middle"
+          className="w-32 md:w-64 rounded-full float-left mx-4 my-2 md:my-16 align-middle"
           src="/photo_square.jpg"
         />
         <ReactMarkdown

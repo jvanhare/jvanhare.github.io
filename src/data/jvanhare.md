@@ -1,7 +1,7 @@
 # About
 
 Since october 2022, I am a research fellow in the [GAMMA](https://team.inria.fr/gamma) team
-at [INRIA](https://www.inria.fr/en), which is aimed at certifying the numerical results and
+at [Inria](https://www.inria.fr/en), which is aimed at certifying the numerical results and
 providing high-fidelity numerical solutions. It focuses on state-of-the-art meshing technologies
 and advanced numerical methods.
 
