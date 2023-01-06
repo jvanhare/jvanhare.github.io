@@ -35,6 +35,16 @@ const Layout = ({ children }: { children: ReactNode }) => (
         name="google-site-verification"
         content="4_-iwXy7om5Xryr9DhjyOV20kyLapnbl8QP164lW68Y"
       />
+      <meta
+        name="theme-color"
+        content="#f1f5f9"
+        media="(prefers-color-scheme: light)"
+      />
+      <meta
+        name="theme-color"
+        content="#1e293b"
+        media="(prefers-color-scheme: dark)"
+      />
     </Head>
     <ThemeProvider attribute="class">
       <div className="container mx-auto max-w-3xl px-4 text-lg">
