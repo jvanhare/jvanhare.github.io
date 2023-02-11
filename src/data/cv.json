@@ -1,86 +1,18 @@
 {
-  "education": [
-    {
-      "company_name": "AIRBUS",
-      "company_url": "http://www.airbus.com",
-      "description": "High-order numerical methods for unsteady flows around complex geometries",
-      "end_date": "2017-04-30T00:00:00Z",
-      "institution_name": "Université de Toulouse",
-      "institution_url": "http://www.univ-toulouse.fr",
-      "location_city": "Toulouse",
-      "location_country": "France",
-      "objectives": [
-        "Collaboration between AIRBUS and CERFACS",
-        "Several numerical methods and codes are investigated for industrial applications",
-        "The coupling with a nonconforming grid interface of high-order schemes for structured and unstructured zones in elsA",
-        "The Spectral Difference Method in JAGUAR",
-        "The Lattice Boltzmann Methods in ProLB"
-      ],
-      "pdf": "https://jvanhare.github.io/pdf/vanharen_phd.pdf",
-      "start_date": "2014-05-01T00:00:00Z",
-      "title": "Ph.D. in Computational Fluid Dynamics"
-    },
-    {
-      "description": "Intensive, two-week training on the key skills, approaches, and tools to design, implement, and execute computational science and engineering applications on current high-end computing systems and the leadership-class computing systems of the future",
-      "end_date": "2016-08-12T00:00:00Z",
-      "institution_name": "Argonne National Laboratory (ANL)",
-      "institution_url": "http://extremecomputingtraining.anl.gov",
-      "location_city": "Lemont, IL",
-      "location_country": "USA",
-      "objectives": [
-        "Computer architectures and predicted evolution",
-        "Numerical algorithms and mathematical software",
-        "Approaches to building community codes for HPC systems",
-        "Data analysis, visualization, I/O, and methodologies and tools for big data applications",
-        "Performance measurement and debugging tools"
-      ],
-      "start_date": "2016-07-31T00:00:00Z",
-      "title": "Argonne Training Program on Extreme-Scale Computing (ATPESC)"
-    },
-    {
-      "end_date": "2013-06-30T00:00:00Z",
-      "institution_name": "ISAE-SUPAERO",
-      "institution_url": "http://www.isae-supaero.fr/en",
-      "location_city": "Toulouse",
-      "location_country": "France",
-      "start_date": "2012-09-01T00:00:00Z",
-      "title": "M.Sc. Fluid Dynamics"
-    },
-    {
-      "end_date": "2013-06-30T00:00:00Z",
-      "institution_name": "ISAE-SUPAERO",
-      "institution_url": "http://www.isae-supaero.fr/en",
-      "location_city": "Toulouse",
-      "location_country": "France",
-      "start_date": "2009-09-01T00:00:00Z",
-      "title": "M.Sc. Aerospace and Aeronautical Engineering"
-    },
-    {
-      "description": "Undergraduate studies in a national preparatory program for entrance into France state run graduate school of engineering",
-      "end_date": "2009-06-30T00:00:00Z",
-      "institution_name": "Lycée Faidherbe",
-      "institution_url": "http://www.faidherbe.org",
-      "location_city": "Lille",
-      "location_country": "France",
-      "start_date": "2007-09-01T00:00:00Z",
-      "title": "Classe préparatoire PCSI/PC"
-    }
-  ],
-  "lang": {
-    "English": "Full working proficiency",
-    "French": "Native proficiency",
-    "German": "Good working knowledge",
-    "Polish": "Basic communication skills"
-  },
   "personal_data": {
-    "address": "36, rue Frédéric Chopin, 91210 Draveil France",
+    "first_name": "Julien",
+    "last_name": "Vanharen",
+    "title": "Ph.D. in Computational Fluid Dynamics",
+    "birth_date": "1989-07-31T00:00:00Z",
     "birth_city": "Soissons",
     "birth_country": "France",
-    "birth_date": "1989-07-31T00:00:00Z",
     "citizenship": "French",
+    "phone": "+33 (0)6 60 74 88 16",
     "email": "julien.vanharen@inria.fr",
-    "first_name": "Julien",
+    "website": "https://jvanhare.github.io",
     "github": "https://github.com/jvanhare",
+    "scholar": "https://scholar.google.com/citations?hl=enanduser=R6OO3noAAAAJ",
+    "address": "36, rue Frédéric Chopin, 91210 Draveil France",
     "keywords": [
       "Anisotropic unstructured mesh adaptation",
       "Numerical schemes for Computational Fluid Dynamics (CFD)",
@@ -108,133 +40,197 @@
       "Unsteady mesh adaptation",
       "Non-manifold geometry",
       "Shock waves"
-    ],
-    "last_name": "Vanharen",
-    "phone": "+33 (0)6 60 74 88 16",
-    "scholar": "https://scholar.google.com/citations?hl=enanduser=R6OO3noAAAAJ",
-    "title": "Ph.D. in Computational Fluid Dynamics",
-    "website": "https://jvanhare.github.io"
+    ]
   },
   "professional_experience": [
     {
+      "title": "Research fellow",
       "company_name": "Inria Saclay",
       "company_url": "https://www.inria.fr/en/centre-inria-saclay-ile-de-france",
-      "description": "Meshing, anisotropic mesh adaptation and high-order numerical methods",
+      "team": "GAMMA",
       "location_city": "Palaiseau",
       "location_country": "France",
+      "start_date": "2022-10-01T00:00:00Z",
+      "description": "Meshing, anisotropic mesh adaptation and high-order numerical methods",
       "objectives": [
         "Anisotropic unstructured mesh adaptation",
         "Numerical schemes for Computational Fluid Dynamics (CFD)",
         "Reynolds-Averaged Navier–Stokes (RANS) and Large Eddy Simulation (LES)",
         "High Performance Computing"
-      ],
-      "start_date": "2022-10-01T00:00:00Z",
-      "team": "GAMMA",
-      "title": "Research fellow"
+      ]
     },
     {
-      "company_alt_name": "The French Aerospace Lab",
+      "title": "Research engineer",
       "company_name": "ONERA",
+      "company_alt_name": "The French Aerospace Lab",
       "company_url": "https://www.onera.fr/en",
-      "description": "CEDRE developer",
-      "end_date": "2022-09-30T00:00:00Z",
+      "team": "DMPE/PLM",
       "location_city": "Châtillon",
       "location_country": "France",
+      "start_date": "2020-06-01T00:00:00Z",
+      "end_date": "2022-09-30T00:00:00Z",
+      "description": "CEDRE developer",
       "objectives": [
         "CEDRE is a multi-physics platform working on general unstructured meshes intended to both advance research and process industrial applications in the fields of energetics and propulsion",
         "High-order and high-fidelity numerical methods",
         "High Performance Computing optimization"
-      ],
-      "start_date": "2020-06-01T00:00:00Z",
-      "team": "DMPE/PLM",
-      "title": "Research engineer"
+      ]
     },
     {
+      "title": "Postdoctoral fellow",
       "company_name": "Inria Saclay - Île-de-France",
       "company_url": "https://www.inria.fr/en/centre-inria-saclay-ile-de-france",
-      "description": "Time-accurate anisotropic mesh adaptation for fluid-structure interaction (FSI) simulations",
-      "end_date": "2020-05-31T00:00:00Z",
+      "team": "GAMMA",
       "location_city": "Palaiseau",
       "location_country": "France",
+      "start_date": "2017-05-01T00:00:00Z",
+      "end_date": "2020-05-31T00:00:00Z",
+      "description": "Time-accurate anisotropic mesh adaptation for fluid-structure interaction (FSI) simulations",
       "objectives": [
         "Implementation and validation of the Finite Element method for the unsteady linear elasticity equations",
         "Coupling with a code solving the Euler equations based on the Finite Volume method",
         "Development of error estimates for fluid-structure interaction applied to unsteady anisotropic mesh adaptation",
         "Project RAPID funded by Direction Générale de l'Armement (DGA)"
-      ],
-      "start_date": "2017-05-01T00:00:00Z",
-      "team": "GAMMA",
-      "title": "Postdoctoral fellow"
+      ]
     },
     {
+      "title": "Research engineer",
       "company_name": "CERFACS",
       "company_url": "https://cerfacs.fr",
-      "description": "Computational fluid dynamics (CFD) and high-order numerical methods",
-      "end_date": "2014-03-31T00:00:00Z",
+      "team": "CFD",
       "location_city": "Toulouse",
       "location_country": "France",
+      "start_date": "2014-01-01T00:00:00Z",
+      "end_date": "2014-03-31T00:00:00Z",
+      "description": "Computational fluid dynamics (CFD) and high-order numerical methods",
       "objectives": [
         "URANS computations on unstructured meshes",
         "Stability of the Spectral Difference Method"
-      ],
-      "start_date": "2014-01-01T00:00:00Z",
-      "team": "CFD",
-      "title": "Research engineer"
+      ]
     },
     {
+      "title": "Research intern",
       "company_name": "CERFACS",
       "company_url": "https://cerfacs.fr",
-      "description": "Numerical methods for nonconforming grid interface (NGI)",
-      "end_date": "2013-09-30T00:00:00Z",
+      "team": "CFD",
       "location_city": "Toulouse",
       "location_country": "France",
+      "start_date": "2013-04-01T00:00:00Z",
+      "end_date": "2013-09-30T00:00:00Z",
+      "description": "Numerical methods for nonconforming grid interface (NGI)",
       "objectives": [
         "Theoretical and numerical analysis of nonconforming grid interface between structured blocks for Large Eddy Simulation",
         "Implementation inside the elsA software of a Riemann solver at the interface"
-      ],
-      "start_date": "2013-04-01T00:00:00Z",
-      "team": "CFD",
-      "title": "Research intern"
+      ]
     },
     {
+      "title": "Engineering intern",
       "company_name": "AIRBUS",
       "company_url": "https://www.airbus.com",
-      "description": "Handling qualities",
-      "end_date": "2012-08-31T00:00:00Z",
+      "team": null,
       "location_city": "Bremen",
       "location_country": "Germany",
+      "start_date": "2012-06-01T00:00:00Z",
+      "end_date": "2012-08-31T00:00:00Z",
+      "description": "Handling qualities",
       "objectives": [
         "A340-600 MSN360 flight test analysis",
         "Effect of the vortex generators on rudder efficiency"
-      ],
-      "start_date": "2012-06-01T00:00:00Z",
-      "team": null,
-      "title": "Engineering intern"
+      ]
     },
     {
+      "title": "Engineering intern",
       "company_name": "AIRBUS",
       "company_url": "https://www.airbus.com",
-      "description": "Methods and tools for unsteady numerical simulations on moving meshes",
-      "end_date": "2012-05-31T00:00:00Z",
+      "team": null,
       "location_city": "Toulouse",
       "location_country": "France",
+      "start_date": "2011-07-01T00:00:00Z",
+      "end_date": "2012-05-31T00:00:00Z",
+      "description": "Methods and tools for unsteady numerical simulations on moving meshes",
       "objectives": [
         "Unsteady aerodynamics, gust and aileron deflection effect on aircraft behavior",
         "Extension and improvement of CFD methods to predict flutter thanks to dynamic coupling",
         "Selected to be part of the EADS Junior Programme"
-      ],
-      "start_date": "2011-07-01T00:00:00Z",
-      "team": null,
-      "title": "Engineering intern"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "title": "Ph.D. in Computational Fluid Dynamics",
+      "pdf": "https://jvanhare.github.io/pdf/vanharen_phd.pdf",
+      "company_name": "AIRBUS",
+      "company_url": "http://www.airbus.com",
+      "institution_name": "Université de Toulouse",
+      "institution_url": "http://www.univ-toulouse.fr",
+      "location_city": "Toulouse",
+      "location_country": "France",
+      "start_date": "2014-05-01T00:00:00Z",
+      "end_date": "2017-04-30T00:00:00Z",
+      "description": "High-order numerical methods for unsteady flows around complex geometries",
+      "objectives": [
+        "Collaboration between AIRBUS and CERFACS",
+        "Several numerical methods and codes are investigated for industrial applications",
+        "The coupling with a nonconforming grid interface of high-order schemes for structured and unstructured zones in elsA",
+        "The Spectral Difference Method in JAGUAR",
+        "The Lattice Boltzmann Methods in ProLB"
+      ]
+    },
+    {
+      "title": "Argonne Training Program on Extreme-Scale Computing (ATPESC)",
+      "institution_name": "Argonne National Laboratory (ANL)",
+      "institution_url": "http://extremecomputingtraining.anl.gov",
+      "location_city": "Lemont, IL",
+      "location_country": "USA",
+      "start_date": "2016-07-31T00:00:00Z",
+      "end_date": "2016-08-12T00:00:00Z",
+      "description": "Intensive, two-week training on the key skills, approaches, and tools to design, implement, and execute computational science and engineering applications on current high-end computing systems and the leadership-class computing systems of the future",
+      "objectives": [
+        "Computer architectures and predicted evolution",
+        "Numerical algorithms and mathematical software",
+        "Approaches to building community codes for HPC systems",
+        "Data analysis, visualization, I/O, and methodologies and tools for big data applications",
+        "Performance measurement and debugging tools"
+      ]
+    },
+    {
+      "title": "M.Sc. Fluid Dynamics",
+      "institution_name": "ISAE-SUPAERO",
+      "institution_url": "http://www.isae-supaero.fr/en",
+      "location_city": "Toulouse",
+      "location_country": "France",
+      "start_date": "2012-09-01T00:00:00Z",
+      "end_date": "2013-06-30T00:00:00Z"
+    },
+    {
+      "title": "M.Sc. Aerospace and Aeronautical Engineering",
+      "institution_name": "ISAE-SUPAERO",
+      "institution_url": "http://www.isae-supaero.fr/en",
+      "location_city": "Toulouse",
+      "location_country": "France",
+      "start_date": "2009-09-01T00:00:00Z",
+      "end_date": "2013-06-30T00:00:00Z"
+    },
+    {
+      "title": "Classe préparatoire PCSI/PC",
+      "institution_name": "Lycée Faidherbe",
+      "institution_url": "http://www.faidherbe.org",
+      "location_city": "Lille",
+      "location_country": "France",
+      "start_date": "2007-09-01T00:00:00Z",
+      "end_date": "2009-06-30T00:00:00Z",
+      "description": "Undergraduate studies in a national preparatory program for entrance into France state run graduate school of engineering"
     }
   ],
   "teaching": [
     {
-      "description": "The course introduces the theoretical background and methods for anisotropic unstructured mesh generation",
+      "title": "Anisotropic unstructured mesh generation for complex geometries",
       "institution_name": "Université Paris-Est Créteil (UPEC)",
       "institution_url": "https://www.u-pec.fr",
       "location_city": "Créteil",
       "location_country": "France",
+      "start_date": "2022-10-03T00:00:00Z",
+      "description": "The course introduces the theoretical background and methods for anisotropic unstructured mesh generation",
       "objectives": [
         "Simplexes and barycentric coordinates",
         "Linked lists and hash tables",
@@ -242,16 +238,16 @@
         "Riemannian manifold and metrics",
         "Anisotropic meshes",
         "Mesh adaptation"
-      ],
-      "start_date": "2022-10-03T00:00:00Z",
-      "title": "Anisotropic unstructured mesh generation for complex geometries"
+      ]
     },
     {
-      "description": "The goal of this course is to lay out the fundamental concepts and results for incompressible fluid mechanics",
+      "title": "Incompressible fluid mechanics [MF102]",
       "institution_name": "ENSTA Paris",
       "institution_url": "http://www.ensta-paris.fr",
       "location_city": "Palaiseau",
       "location_country": "France",
+      "start_date": "2019-06-01T00:00:00Z",
+      "description": "The goal of this course is to lay out the fundamental concepts and results for incompressible fluid mechanics",
       "objectives": [
         "Characteristic quantities of an incompressible flow",
         "Dimensional analysis",
@@ -259,16 +255,16 @@
         "Boundary layer concepts",
         "Matched asymptotic expansions",
         "Falkner-Skan boundary layer"
-      ],
-      "start_date": "2019-06-01T00:00:00Z",
-      "title": "Incompressible fluid mechanics [MF102]"
+      ]
     },
     {
-      "description": "This training course enables the participants to reinforce their theoretical knowledge in order to understand and analyze high fidelity compressible Large Eddy Simulation (LES) and hands-on sessions are organized to put the theoretical courses into practice",
+      "title": "Fundamentals to understand and analyze high fidelity compressible Large Eddy Simulation (LES)",
       "institution_name": "CERFACS",
       "institution_url": "https://cerfacs.fr/en",
       "location_city": "Toulouse",
       "location_country": "France",
+      "start_date": "2016-05-01T00:00:00Z",
+      "description": "This training course enables the participants to reinforce their theoretical knowledge in order to understand and analyze high fidelity compressible Large Eddy Simulation (LES) and hands-on sessions are organized to put the theoretical courses into practice",
       "objectives": [
         "Numerical simulation for the Navier-Stokes equations (mesh, discretization methods, data storage)",
         "High-fidelity numerical schemes for LES",
@@ -276,15 +272,19 @@
         "Turbulence injection methods",
         "Navier-Stokes Characteristic Boundary Conditions (NSCBC)",
         "Wall treatment"
-      ],
-      "start_date": "2016-05-01T00:00:00Z",
-      "title": "Fundamentals to understand and analyze high fidelity compressible Large Eddy Simulation (LES)"
+      ]
     }
   ],
+  "lang": {
+    "French": "Native proficiency",
+    "English": "Full working proficiency",
+    "German": "Good working knowledge",
+    "Polish": "Basic communication skills"
+  },
   "url": {
     "CEDRE_url": "http://cedre.onera.fr",
+    "elsA_url": "http://elsa.onera.fr",
     "JAGUAR_url": "http://gpuigt.free.fr/jaguar.html",
-    "ProLB_url": "http://www.prolb-cfd.com",
-    "elsA_url": "http://elsa.onera.fr"
+    "ProLB_url": "http://www.prolb-cfd.com"
   }
 }

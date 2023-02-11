@@ -2,8 +2,8 @@ rule wget
     command = wget -q -O $out $input
     description = Download $input to $out
 rule yaml_to_json
-    command = horus convert -q -i $in -o $out
-    description = Convertn $in to $out
+    command = yq -o=json eval $in > $out
+    description = Convert $in to $out
 rule bib_to_json
     command = yarn run -s citation-js -i $in -o $output
 
