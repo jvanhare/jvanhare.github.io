@@ -163,7 +163,6 @@ export default function Publications(): JSX.Element {
       <ol className="list-decimal list-inside">
         {Papers.map((paper) => (
           <li key={paper.id} className="my-4">
-            <div className="whitespace-nowrap">
               {renderAuthors(paper.author)}
               {renderTitle(paper.title)}
               {renderConference(
@@ -173,7 +172,6 @@ export default function Publications(): JSX.Element {
               )}
               {renderDOI(paper.DOI)}
               {renderPDF(paper.URL)}
-            </div>
           </li>
         ))}
       </ol>
@@ -182,7 +180,6 @@ export default function Publications(): JSX.Element {
       <ol className="list-decimal list-inside">
         {Conferences.map((conference) => (
           <li key={conference.id} className="my-4">
-            <div className="whitespace-nowrap">
               {renderAuthors(conference.author)}
               {renderTitle(conference.title)}
               {renderConference(
@@ -192,7 +189,6 @@ export default function Publications(): JSX.Element {
               )}
               {renderDOI(conference.DOI)}
               {renderPDF(conference.URL)}
-            </div>
           </li>
         ))}
       </ol>
@@ -201,7 +197,6 @@ export default function Publications(): JSX.Element {
       <ol className="list-decimal list-inside">
         {Thesis.map((thesis) => (
           <li key={thesis.id}>
-            <div className="whitespace-nowrap">
               {renderAuthors(thesis.author)}
               {renderTitle(thesis.title)}
               {renderThesis(
@@ -210,7 +205,6 @@ export default function Publications(): JSX.Element {
               )}
               {renderDOI(thesis.DOI)}
               {renderPDF(thesis.URL)}
-            </div>
           </li>
         ))}
       </ol>
