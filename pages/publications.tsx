@@ -48,7 +48,7 @@ function renderJournal(year: number, volume?: string, journal?: string) {
         <span className="italic whitespace-normal">
           {journal} {volume}{" "}
         </span>
-        <span>({year}).{" "}</span>
+        <span>({year}). </span>
       </span>
     );
   }
@@ -83,8 +83,7 @@ function renderThesis(year: number, publisher?: string) {
       <span className="whitespace-normal">
         <span className="italic">{publisher}</span>
         {", "}
-        {year}
-        .{" "}
+        {year}.{" "}
       </span>
     );
   }
@@ -106,17 +105,29 @@ function renderDOI(doi?: string) {
   return null;
 }
 
-function renderPDF(url?: string) {
+function renderURL(url?: string) {
   if (url != undefined) {
-    return (
-      <Link
-        target="_blank"
-        href={url}
-        className="no-underline hover:underline text-sky-500 hover:text-sky-500 visited:text-sky-500"
-      >
-        {" [PDF]"}
-      </Link>
-    );
+    if (url.endsWith(".pdf")) {
+      return (
+        <Link
+          target="_blank"
+          href={url}
+          className="no-underline hover:underline text-sky-500 hover:text-sky-500 visited:text-sky-500"
+        >
+          {" [PDF]"}
+        </Link>
+      );
+    } else {
+      return (
+        <Link
+          target="_blank"
+          href={url}
+          className="no-underline hover:underline text-sky-500 hover:text-sky-500 visited:text-sky-500"
+        >
+          {" [Slides]"}
+        </Link>
+      );
+    }
   }
   return null;
 }
@@ -154,7 +165,7 @@ export default function Publications(): JSX.Element {
               article["container-title"]
             )}
             {renderDOI(article.DOI)}
-            {renderPDF(article.URL)}
+            {renderURL(article.URL)}
           </li>
         ))}
       </ol>
@@ -163,15 +174,15 @@ export default function Publications(): JSX.Element {
       <ol className="list-decimal list-inside">
         {Papers.map((paper) => (
           <li key={paper.id} className="my-4">
-              {renderAuthors(paper.author)}
-              {renderTitle(paper.title)}
-              {renderConference(
-                paper.issued["date-parts"][0][0],
-                paper["publisher-place"],
-                paper["container-title"]
-              )}
-              {renderDOI(paper.DOI)}
-              {renderPDF(paper.URL)}
+            {renderAuthors(paper.author)}
+            {renderTitle(paper.title)}
+            {renderConference(
+              paper.issued["date-parts"][0][0],
+              paper["publisher-place"],
+              paper["container-title"]
+            )}
+            {renderDOI(paper.DOI)}
+            {renderURL(paper.URL)}
           </li>
         ))}
       </ol>
@@ -180,15 +191,15 @@ export default function Publications(): JSX.Element {
       <ol className="list-decimal list-inside">
         {Conferences.map((conference) => (
           <li key={conference.id} className="my-4">
-              {renderAuthors(conference.author)}
-              {renderTitle(conference.title)}
-              {renderConference(
-                conference.issued["date-parts"][0][0],
-                conference["publisher-place"],
-                conference["publisher"]
-              )}
-              {renderDOI(conference.DOI)}
-              {renderPDF(conference.URL)}
+            {renderAuthors(conference.author)}
+            {renderTitle(conference.title)}
+            {renderConference(
+              conference.issued["date-parts"][0][0],
+              conference["publisher-place"],
+              conference["publisher"]
+            )}
+            {renderDOI(conference.DOI)}
+            {renderURL(conference.URL)}
           </li>
         ))}
       </ol>
@@ -197,14 +208,11 @@ export default function Publications(): JSX.Element {
       <ol className="list-decimal list-inside">
         {Thesis.map((thesis) => (
           <li key={thesis.id}>
-              {renderAuthors(thesis.author)}
-              {renderTitle(thesis.title)}
-              {renderThesis(
-                thesis.issued["date-parts"][0][0],
-                thesis.publisher
-              )}
-              {renderDOI(thesis.DOI)}
-              {renderPDF(thesis.URL)}
+            {renderAuthors(thesis.author)}
+            {renderTitle(thesis.title)}
+            {renderThesis(thesis.issued["date-parts"][0][0], thesis.publisher)}
+            {renderDOI(thesis.DOI)}
+            {renderURL(thesis.URL)}
           </li>
         ))}
       </ol>
