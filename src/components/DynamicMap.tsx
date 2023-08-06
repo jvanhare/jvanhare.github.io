@@ -34,7 +34,7 @@ const DynamicMap = () => {
       center={[0, 0]}
       zoom={2}
       scrollWheelZoom={true}
-      style={{ height: "75vh", width: "75%" }}
+      style={{ height: "75vh", width: "96%" }}
     >
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
