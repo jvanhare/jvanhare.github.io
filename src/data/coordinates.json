@@ -1,0 +1,53 @@
+{
+  "both": [
+    {
+      "city": "Danizy, FR",
+      "latitude": 49.66482388893088,
+      "longitude": 3.3913280220317508
+    },
+    {
+      "city": "Draveil, FR",
+      "latitude": 48.68549937741358,
+      "longitude": 2.407693272272251
+    },
+    {
+      "city": "Paris, FR",
+      "latitude": 48.8566307800398,
+      "longitude": 2.3524886094590367
+    },
+    {
+      "city": "Raciborz, PL",
+      "latitude": 50.09663052449754,
+      "longitude": 18.218158045851045
+    }
+  ],
+  "julien": [
+    {
+      "city": "Montreal, CA",
+      "latitude": 45.50525450553825,
+      "longitude": -73.56175035564208
+    },
+    {
+      "city": "North Hatley, CA",
+      "latitude": 45.27469776839328,
+      "longitude": -71.97313160222534
+    },
+    {
+      "city": "Sherbrooke, CA",
+      "latitude": 45.40484759512824,
+      "longitude": -71.90620947495434
+    }
+  ],
+  "dominika": [
+    {
+      "city": "Havana, CU",
+      "latitude": 23.11731755461067,
+      "longitude": -82.36765507679584
+    },
+    {
+      "city": "Matanzas, CU",
+      "latitude": 23.030030208066975,
+      "longitude": -81.53143659939857
+    }
+  ]
+}
