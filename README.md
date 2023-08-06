@@ -22,4 +22,3 @@ yarn build
 
 1. Create a YouTube channel to share movies
 2. Add a gallery
-3. Slides templates and share the slides
