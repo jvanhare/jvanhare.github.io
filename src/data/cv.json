@@ -230,6 +230,7 @@
       "location_city": "Créteil",
       "location_country": "France",
       "start_date": "2022-10-03T00:00:00Z",
+      "end_date": "2023-10-03T00:00:00Z",
       "description": "The course introduces the theoretical background and methods for anisotropic unstructured mesh generation",
       "objectives": [
         "Simplexes and barycentric coordinates",

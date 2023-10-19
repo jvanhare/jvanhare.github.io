@@ -199,6 +199,7 @@ teaching:
     location_city: Créteil
     location_country: France
     start_date: 2022-10-03
+    end_date: 2023-10-03
     description: The course introduces the theoretical background and methods for anisotropic unstructured mesh generation
     objectives:
       - Simplexes and barycentric coordinates

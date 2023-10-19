@@ -23,7 +23,7 @@ export default function Teaching(): JSX.Element {
           <div className="text-gray-400">
             {t.location_city}, {t.location_country}
           </div>
-          <DateFormat start={t.start_date} end="" />
+          <DateFormat start={t.start_date} end={t.end_date ? t.end_date : ''} />
           <div className="italic">{t.description}.</div>
           <ol className="mx-4 my-4">
             {t.objectives.map((o) => (
