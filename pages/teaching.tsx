@@ -23,7 +23,7 @@ export default function Teaching({ cv }: Props): JSX.Element {
     <Layout>
       <h1>Teaching</h1>
 
-      {cv.teaching.map((t) => (
+      {cv.teaching.map((t: any) => (
         <div key={t.institution_name}>
           <h2>{t.title}</h2>
           <Link
