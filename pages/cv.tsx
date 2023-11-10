@@ -1,19 +1,32 @@
 import Link from "next/link";
+import { GetStaticProps } from "next";
 
 import { Download } from "react-feather";
 
 import Layout from "../src/components/Layout";
 import DateFormat from "../src/components/DateFormat";
 
-import cv from "../src/data/cv.json";
+type Props = {
+  cv: any;
+};
 
-export default function CV(): JSX.Element {
+export const getStaticProps = (async () => {
+  const res = await fetch(
+    "https://raw.githubusercontent.com/jvanhare/cv/master/cv.json"
+  );
+  const cv = await res.json();
+  return { props: { cv } };
+}) satisfies GetStaticProps<{
+  cv: Props;
+}>;
+
+export default function CV({ cv }: Props): JSX.Element {
   let professional_experience = cv.professional_experience.filter(
-    (p) => new Date(p.start_date) > new Date(2015, 1, 1)
+    (p: any) => new Date(p.start_date) > new Date(2015, 1, 1)
   );
 
   let education = cv.education.filter(
-    (p) => new Date(p.start_date) > new Date(2008, 1, 1)
+    (p: any) => new Date(p.start_date) > new Date(2008, 1, 1)
   );
 
   return (
@@ -29,7 +42,7 @@ export default function CV(): JSX.Element {
 
       <h1>Professional experience</h1>
 
-      {professional_experience.map((p, ip) => (
+      {professional_experience.map((p: any, ip: any) => (
         <div key={p.company_name + "-" + ip} className="mb-4">
           <h2>{p.title}</h2>
           <Link
@@ -58,7 +71,7 @@ export default function CV(): JSX.Element {
           <DateFormat start={p.start_date} end={p.end_date} />
           <div className="italic">{p.description}</div>
           <ol className="mx-4 mt-4">
-            {p.objectives.map((o) => (
+            {p.objectives.map((o: any) => (
               <li className="list-disc list-outside pt-0 mb-0 ml-4" key={o}>
                 {o}
               </li>
@@ -69,7 +82,7 @@ export default function CV(): JSX.Element {
 
       <h1>Education</h1>
 
-      {education.map((e, ie) => (
+      {education.map((e: any, ie: any) => (
         <div key={e.institution_name + "-" + ie} className="mb-4">
           {e.pdf === undefined && <h2>{e.title}</h2>}
           {e.pdf != undefined && (
@@ -107,7 +120,7 @@ export default function CV(): JSX.Element {
           <div className="italic">{e.description}</div>
           <ol className="mx-4 mt-4">
             {e.objectives != null &&
-              e.objectives.map((o) => (
+              e.objectives.map((o: any) => (
                 <li className="list-disc list-outside pt-0 mb-0 ml-4" key={o}>
                   {o}
                 </li>

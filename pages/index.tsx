@@ -1,4 +1,3 @@
-import fs from "fs";
 import ReactMarkdown from "react-markdown";
 import matter from "gray-matter";
 
@@ -7,33 +6,38 @@ import { GetStaticProps } from "next";
 import Layout from "../src/components/Layout";
 
 type Props = {
-  content: string;
+  md: string;
 };
 
 export const getStaticProps: GetStaticProps = async () => {
-  const fid = fs.readFileSync("src/data/jvanhare.md", "utf-8");
-  const md = matter(fid);
+  const md = await fetch(
+    "https://raw.githubusercontent.com/jvanhare/jvanhare/master/README.md"
+  )
+    .then((r) => r.text())
+    .then((r) => matter(r));
   return {
     props: {
-      content: md.content,
+      md: md.content,
     },
   };
 };
 
-export default function Index({ content }: Props): JSX.Element {
+export default function Index({ md }: Props): JSX.Element {
   return (
     <Layout>
       <div>
         <img
-          className="w-32 md:w-64 rounded-full float-left mx-4 my-2 md:my-16 align-middle"
+          className="w-32 md:w-64 rounded-full float-right mx-4 my-2 md:my-16 align-middle"
           src="/photo_square.jpg"
         />
         <ReactMarkdown
-          children={content}
+          children={md}
           components={{
             ul: ({ children }) => <ul className="mx-4 my-4">{children}</ul>,
             li: ({ children }) => (
-              <li className="list-disc list-outside pt-0 mb-0 ml-4">{children}</li>
+              <li className="list-disc list-outside pt-0 mb-0 ml-4">
+                {children}
+              </li>
             ),
             a: ({ children, ...props }) => (
               <a

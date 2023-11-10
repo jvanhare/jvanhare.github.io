@@ -1,5 +1,3 @@
-import cv from "../data/cv.json";
-
 import getConfig from "next/config";
 
 export default function Footer(): JSX.Element {
@@ -11,8 +9,7 @@ export default function Footer(): JSX.Element {
     <footer>
       <div className="clearfix ">
         <div className="text-xs md:text-sm float-left mb-2 mt-4">
-          &copy; {month} {year} by {cv.personal_data.first_name}{" "}
-          {cv.personal_data.last_name}.
+          &copy; {month} {year} by Julien Vanharen.
         </div>
         <div className="text-xs md:text-sm float-right mb-2 mt-4">
           Last updated in {publicRuntimeConfig.buildMonth}{" "}

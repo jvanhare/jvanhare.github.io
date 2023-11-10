@@ -6,31 +6,15 @@ import Footer from "../components/Footer";
 
 import { ReactNode } from "react";
 
-import cv from "../data/cv.json";
-
 const Layout = ({ children }: { children: ReactNode }) => (
   <div>
     <Head>
-      <title key="gen-title">
-        {cv.personal_data.first_name + " " + cv.personal_data.last_name}
-      </title>
+      <title key="gen-title">Julien Vanharen</title>
       <meta
         name="description"
-        content={
-          cv.personal_data.first_name +
-          " " +
-          cv.personal_data.last_name +
-          "'s website"
-        }
+        content="Julien Vanharen's website"
         key="gen-desc"
       />
-      {cv.personal_data.keywords.map((keyword, i) => (
-        <meta
-          name={"keyword"}
-          content={keyword}
-          key={"gen-keywords-" + (i + 1)}
-        />
-      ))}
       <meta
         name="google-site-verification"
         content="4_-iwXy7om5Xryr9DhjyOV20kyLapnbl8QP164lW68Y"

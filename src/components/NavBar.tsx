@@ -10,8 +10,6 @@ import { X } from "react-feather";
 
 import Toggle from "./Toggle";
 
-import cv from "../data/cv.json";
-
 export type NavBarItem = {
   name: string;
   href: string;
@@ -37,10 +35,7 @@ const NavBar = () => (
               {open ? (
                 <X className="block hover:text-sky-500" aria-hidden="true" />
               ) : (
-                <Menu
-                  className="block hover:text-sky-500"
-                  aria-hidden="true"
-                />
+                <Menu className="block hover:text-sky-500" aria-hidden="true" />
               )}
             </Disclosure.Button>
           </div>
@@ -62,7 +57,7 @@ const NavBar = () => (
             <a
               aria-label="mailto"
               target="_blank"
-              href={"mailto:" + cv.personal_data.email}
+              href={"mailto:julien.vanharen@inria.fr"}
               className="hover:underline hover:text-sky-500 px-2"
             >
               <Mail />
@@ -70,7 +65,7 @@ const NavBar = () => (
             <a
               aria-label="scholar"
               target="_blank"
-              href={cv.personal_data.scholar}
+              href="https://scholar.google.com/citations?hl=enanduser=R6OO3noAAAAJ"
               className="hover:underline hover:text-sky-500 px-2"
             >
               <Book />
@@ -78,7 +73,7 @@ const NavBar = () => (
             <a
               aria-label="github"
               target="_blank"
-              href={cv.personal_data.github}
+              href="https://github.com/jvanhare"
               className="hover:underline hover:text-sky-500 px-2"
             >
               <GitHub />

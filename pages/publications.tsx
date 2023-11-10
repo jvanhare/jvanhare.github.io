@@ -1,8 +1,22 @@
 import Link from "next/link";
 
+import { GetStaticProps } from "next";
+
 import Layout from "../src/components/Layout";
 
-import biblio from "../src/data/bibliography.json";
+type Props = {
+  biblio: any;
+};
+
+export const getStaticProps = (async (context) => {
+  const res = await fetch(
+    "https://raw.githubusercontent.com/jvanhare/bibliography/master/jvanhare.json"
+  );
+  const biblio = await res.json();
+  return { props: { biblio } };
+}) satisfies GetStaticProps<{
+  biblio: Props;
+}>;
 
 function sortPublication(a: any, b: any) {
   if (
@@ -132,21 +146,21 @@ function renderURL(url?: string) {
   return null;
 }
 
-export default function Publications(): JSX.Element {
+export default function Publications({ biblio }: Props): JSX.Element {
   let Articles = biblio
-    .filter((entry) => entry.type === "article-journal")
+    .filter((entry: any) => entry.type === "article-journal")
     .sort(sortPublication);
 
   let Papers = biblio
-    .filter((entry) => entry.type === "paper-conference")
+    .filter((entry: any) => entry.type === "paper-conference")
     .sort(sortPublication);
 
   let Conferences = biblio
-    .filter((entry) => entry.type === "document")
+    .filter((entry: any) => entry.type === "document")
     .sort(sortPublication);
 
   let Thesis = biblio
-    .filter((entry) => entry.type === "thesis")
+    .filter((entry: any) => entry.type === "thesis")
     .sort(sortPublication);
 
   return (
@@ -155,7 +169,7 @@ export default function Publications(): JSX.Element {
 
       <h2>Peer-reviewed journal articles</h2>
       <ol className="list-decimal list-inside">
-        {Articles.map((article) => (
+        {Articles.map((article: any) => (
           <li key={article.id} className="my-4">
             {renderAuthors(article.author)}
             {renderTitle(article.title)}
@@ -172,7 +186,7 @@ export default function Publications(): JSX.Element {
 
       <h2>Peer-reviewed conference papers</h2>
       <ol className="list-decimal list-inside">
-        {Papers.map((paper) => (
+        {Papers.map((paper: any) => (
           <li key={paper.id} className="my-4">
             {renderAuthors(paper.author)}
             {renderTitle(paper.title)}
@@ -189,7 +203,7 @@ export default function Publications(): JSX.Element {
 
       <h2>Conferences and seminars</h2>
       <ol className="list-decimal list-inside">
-        {Conferences.map((conference) => (
+        {Conferences.map((conference: any) => (
           <li key={conference.id} className="my-4">
             {renderAuthors(conference.author)}
             {renderTitle(conference.title)}
@@ -206,7 +220,7 @@ export default function Publications(): JSX.Element {
 
       <h2>Thesis</h2>
       <ol className="list-decimal list-inside">
-        {Thesis.map((thesis) => (
+        {Thesis.map((thesis: any) => (
           <li key={thesis.id}>
             {renderAuthors(thesis.author)}
             {renderTitle(thesis.title)}

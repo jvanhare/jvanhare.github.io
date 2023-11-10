@@ -5,7 +5,7 @@ import { Icon } from "leaflet";
 
 import { MapContainer, Marker, TileLayer } from "react-leaflet";
 
-import coordinates from "../data/coordinates.json";
+import coordinates from "./coordinates.json";
 
 const Heart = new Icon({
   iconUrl: "/heart.svg",
